@@ -1,41 +1,92 @@
 # Reproduction and maintenance
 
-Run the quick-start commands in the root README with Python 3.12. The pinned
-runtime needs NumPy and Pillow only; inference libraries are optional.
+`pyproject.toml` defines dependencies; `uv.lock` records the resolved versions
+and package hashes. `.python-version` selects the tested Python 3.12.14.
+The base environment contains NumPy 2.3.5 and Pillow 12.3.0. Tests use the `dev`
+group; model collection uses the optional `inference` extra.
 
-- `python scripts/verify.py` verifies all delivered file checksums, the 24
-  uncompressed archive identities, raw/evaluation agreement against CoNLL-U gold,
-  and the numerical reference hashes.
-- `PYTHON_BIN=python bash scripts/reproduce.sh` checks the inputs, regenerates
-  results, tables and diagnostic figures, reconstructs all archived prompts,
-  and verifies numerical agreement. It makes no API calls.
-- `python scripts/verify.py --results-only` checks evaluation agreement and
-  numerical references after regeneration, without requiring identical figure
-  bytes. The fixed pipeline schematic is supplied rather than regenerated.
-- `python -m pytest -q` runs the deterministic tests after installing
-  `requirements-dev.txt`.
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) 0.12.5 or
+newer. Run from the repository root. Make targets require Make and Bash:
+
+| Command | Purpose |
+|---|---|
+| `make setup` | Sync the locked reproduction environment in `.venv/` |
+| `make verify` | Check delivered checksums, input identities, gold alignment, and results |
+| `make reproduce` | Regenerate results, tables, diagnostic figures, and prompt provenance |
+| `make test` | Install the locked test group and run deterministic tests |
+
+Every target uses `--locked`: an incompatible dependency-file change fails
+instead of silently updating the lock. Dependencies and Python may download on
+first setup. After setup, `UV_OFFLINE=1 make reproduce` runs without network
+access. To run tests offline, first run `uv sync --locked --group dev`.
+
+## Without Make
+
+```sh
+uv sync --locked --no-dev
+uv run --locked --no-dev python scripts/verify.py
+uv run --locked --no-dev env PYTHON_BIN=python bash scripts/reproduce.sh
+uv run --locked --group dev python -m pytest -q
+```
 
 The 2,077 test sentences remain the reference for every condition. Three absent
 Qwen critique records and unscorable responses receive zero credit. See
-[protocol.md](protocol.md) for scoring, bootstrap inference, and schema details.
-[Prompt sources and dynamic templates](prompt_source_snapshot.md) and the
-[per-call prompt manifest](prompt_provenance.json) document actual model inputs.
+[protocol.md](protocol.md) for scoring and statistical details and
+[the prompt snapshot](prompt_source_snapshot.md) for actual input templates.
 
-## Publishing an intentional update
+Font availability can change regenerated figure bytes. After reproduction, use
+`uv run --locked --no-dev python scripts/verify.py --results-only` to check
+numerical agreement independently of delivery-file hashes. The fixed pipeline
+schematic is supplied rather than regenerated.
 
-After reviewing changes and passing the checks above, run:
+## Pip compatibility
+
+The requirements files are generated exports, not separate dependency sources.
+Use Python 3.12.14 and choose the export for reproduction, development, or
+inference. For example:
 
 ```sh
-python scripts/update_checksums.py
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install --require-hashes -r requirements.txt
 python scripts/verify.py
+PYTHON_BIN=python bash scripts/reproduce.sh
 ```
 
-This refreshes the delivery manifests, not the numerical reference hashes.
-Do not update `docs/expected_numeric_hashes.json` merely to silence a result
-mismatch. Compressed and uncompressed input identities must remain consistent.
-Inspect the staged Git files before committing; do not include local runs,
-credentials, environments, or model caches.
+`requirements-dev.txt` and `requirements-inference.txt` each include their own
+complete dependency closure; install the appropriate file with the same pip
+options when those tools are needed.
+
+## Updating dependencies intentionally
+
+Edit `pyproject.toml`, run `uv lock`, and export the compatibility files:
+
+```sh
+uv export --locked --no-dev --no-emit-project -o requirements.txt
+uv export --locked --group dev --no-emit-project -o requirements-dev.txt
+uv export --locked --no-dev --extra inference --no-emit-project -o requirements-inference.txt
+```
+
+Do not edit the generated requirements files or lockfile manually. Run
+`make setup`, `make reproduce`, and `make test` after a dependency change.
+The lockfile describes this reproduction release; it does not recreate missing
+historical inference environments or guarantee identical model API responses.
+
+## Updating release checksums
+
+After reviewing intentional changes and passing validation, run:
+
+```sh
+uv run --locked --no-dev python scripts/update_checksums.py
+make verify
+```
+
+This refreshes delivery manifests, not numerical reference hashes. Do not
+update `docs/expected_numeric_hashes.json` merely to silence a result mismatch.
+Compressed and uncompressed input identities must remain consistent. Inspect
+staged Git files before committing; do not include local runs, credentials,
+environments, or model caches.
 
 The supervised Stanza reference is outside the archived two-model evaluation.
 Its original saved run output and exact historical resource package are not
-included, and offline reproduction does not rerun that experiment.
+included. Offline reproduction does not rerun that experiment.

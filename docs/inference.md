@@ -1,11 +1,14 @@
 # Optional new inference
 
-The offline reproduction command does not invoke these tools. New collection
-uses a paid DeepInfra OpenAI-compatible endpoint; set `DEEPINFRA_API_KEY` in the
+The offline reproduction command does not invoke these tools. The inference
+extra is optional and includes larger model-library dependencies. Its lockfile
+records a current dependency resolution, not the original collection environment.
+New collection uses a paid DeepInfra OpenAI-compatible endpoint; set `DEEPINFRA_API_KEY` in the
 environment or a local, Git-ignored `.env` file. Run commands from the root.
 
 ```sh
-python -m pip install -r requirements-inference.txt
+uv sync --locked --no-dev --extra inference
+. .venv/bin/activate
 ```
 
 The model aliases used in the archived study are `openai/gpt-oss-120b` and
@@ -79,7 +82,7 @@ in `outputs/` are the record of the messages actually used in the paper;
 `src/analyze_results.py` and `src/extended_error_analysis.py` retain the original
 per-model diagnostic routines and their tests. Their conditional diagnostics
 can use different subsets; `scripts/reproduce.sh` alone defines the paper's
-complete fixed-denominator results. Install `requirements-dev.txt` for plotting
+complete fixed-denominator results. Install the plotting/test group with `uv sync --locked --group dev --extra inference`
 and see each command's `--help` for available diagnostics.
 
 `scripts/verify_fewshot_selection.py` checks the fixed demonstration choices.

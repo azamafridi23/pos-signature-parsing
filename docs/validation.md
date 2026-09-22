@@ -21,3 +21,16 @@ No new API calls, model inference, or Stanza baseline run was performed.
 Font availability can change regenerated figure bytes; numerical reference
 hashes determine result agreement. This validates the supplied LLM artifact,
 not the missing historical Stanza run record or future hosted-model behavior.
+
+## Locked environment workflow
+
+The uv/Make workflow was also validated on 22 September 2026 using uv 0.12.5
+and a fresh Python 3.12.14 environment. All four targets (`make setup`,
+`make verify`, `make reproduce`, and `make test`) passed. After initial package
+downloads, validation ran with `UV_OFFLINE=1`. Setup installed only NumPy and
+Pillow; the test target installed the separate locked development group.
+
+The lockfile did not change during validation. All 119 tests passed, and all
+archive, data, prompt, and numerical result files remained byte-identical.
+The requirements files are generated hash-bearing exports of the same lockfile.
+Optional inference dependencies were resolved but were not installed or run.
