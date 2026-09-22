@@ -1,0 +1,9 @@
+# Optional new collection and Stanza reference runs (not used for reproduction).
+# These are compatibility requirements, not a historical environment lock.
+-r requirements.txt
+openai>=1,<3
+pydantic>=2,<3
+python-dotenv>=1,<2
+pandas>=2,<3
+stanza>=1.11,<2
+sentence-transformers>=3,<6

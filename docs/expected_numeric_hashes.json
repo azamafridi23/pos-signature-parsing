@@ -1,0 +1,10 @@
+{
+  "dataset": "2fd7037e0c8831098b8cfbde39feb2f3924cf0f758c6e6bd53d487cf587609e0",
+  "pairwise": "98e30a83d81f3d76f364b8bd66e15134c8cb600d8ea4daec5e246707ca63fc35",
+  "critique_churn": "3aa3d553438086f1620bd1043f16efae92b7b15f0596ba63c38272bd5ec67da9",
+  "qualitative_selection": "017a55e9e1050705a36001bf351f12f1bd4532c144d91fb82b6cc9beea00a99e",
+  "scoring_without_protocol": "c05d4012d9ab53f5c18335cf21a34d9b5ade2ba553c73639f611a2864079b77d",
+  "qualitative_examples": "ec13b19d314131edf67e265125af195c0ab03a01db4446dedce3b8ea6791eb35",
+  "per_relation": "d2d7e63d22582d0311d4fb6ce91eda613a0ee7459e58eaf7f999a0c1a21c0aa2",
+  "length_analysis": "8182070af005e3ead6a6ac7d538ee7a0fb3b3b314da79178d4aed6e05be0eaf2"
+}

@@ -1,0 +1,13 @@
+# Preserve exact release bytes across platforms for SHA-256 verification.
+* -text
+
+# Preserve upstream inputs verbatim, including intentional whitespace.
+data/** -whitespace
+prompts/** -whitespace
+
+*.json.gz binary
+*.pdf binary
+*.png binary
+
+# CSV exports use the standard CRLF record separator.
+*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

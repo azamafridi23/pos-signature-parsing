@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite this work. Paper identifiers will be added when available."
+title: "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing"
+type: software
+authors:
+  - family-names: Afridi
+    given-names: Muhammad Azam
+  - family-names: Ali
+    given-names: Rajab
+  - family-names: Passarotti
+    given-names: Marco
+abstract: "Implementation and archived-output reproduction for POS-signature demonstration retrieval in Universal Dependencies parsing."
+keywords:
+  - dependency parsing
+  - in-context learning
+  - demonstration retrieval
+  - Universal Dependencies

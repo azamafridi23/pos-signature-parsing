@@ -1,0 +1,98 @@
+{
+  "outputs/gpt_oss_120b/few_shot_retrieval/model_responses.json.gz": {
+    "uncompressed_sha256": "d7ef69c47ce73ea446480757ff07991a5c1815562ea24e64d4564c8d8935a687",
+    "uncompressed_bytes": 29422167
+  },
+  "outputs/gpt_oss_120b/few_shot_retrieval/model_evaluation.json.gz": {
+    "uncompressed_sha256": "91ba259c1c25c052dc25329fde7025fe9c3581f2431b2ac3bd0cd93962ebb7a5",
+    "uncompressed_bytes": 30911081
+  },
+  "outputs/gpt_oss_120b/semantic_retrieval/model_responses.json.gz": {
+    "uncompressed_sha256": "061a330368ad762dfd6fad22268ace13a162b0377160120a4ae81c91f66acedb",
+    "uncompressed_bytes": 29879739
+  },
+  "outputs/gpt_oss_120b/semantic_retrieval/model_evaluation.json.gz": {
+    "uncompressed_sha256": "11a9dd1d0e77305ceb76384966441bf1431f41c550d956d257a19e8d48681e50",
+    "uncompressed_bytes": 31179065
+  },
+  "outputs/gpt_oss_120b/cot_few_shot/model_responses.json.gz": {
+    "uncompressed_sha256": "80f1d4e4af2233b305014c37032df0e7d71c1f21a42854995abf6bfb4f79f675",
+    "uncompressed_bytes": 29881104
+  },
+  "outputs/gpt_oss_120b/cot_few_shot/model_evaluation.json.gz": {
+    "uncompressed_sha256": "e8743c77c97e67a7c4d26cf978aa93ae9ea068121cf0647e5b5fad2c1ff09c22",
+    "uncompressed_bytes": 34048236
+  },
+  "outputs/gpt_oss_120b/zero_shot/model_responses.json.gz": {
+    "uncompressed_sha256": "22da0bf54b1ea1f99085d37a64c8563f0e26c42435375c738e930b9c1301ae98",
+    "uncompressed_bytes": 16239634
+  },
+  "outputs/gpt_oss_120b/zero_shot/model_evaluation.json.gz": {
+    "uncompressed_sha256": "a9a5b8269b890e5dfcf701b5798935766cb5b34b8050df8d00804eb5ae6daddc",
+    "uncompressed_bytes": 18198049
+  },
+  "outputs/gpt_oss_120b/critique_refine/model_responses.json.gz": {
+    "uncompressed_sha256": "a1531ee31d85c0b53e8ba9eab99e37742964e9e18147994e6896a394fa80ccae",
+    "uncompressed_bytes": 21904968
+  },
+  "outputs/gpt_oss_120b/critique_refine/model_evaluation.json.gz": {
+    "uncompressed_sha256": "6c336b5c9f766d28534b3ac05fa19767c85d7fd14a6ac7e59dc7656e20f551cb",
+    "uncompressed_bytes": 23458084
+  },
+  "outputs/gpt_oss_120b/few_shot_fixed/model_responses.json.gz": {
+    "uncompressed_sha256": "acc353f4b724bfee6ade9f3c813353ccc320bc60a45d5c878f181fbbb87d9695",
+    "uncompressed_bytes": 30235818
+  },
+  "outputs/gpt_oss_120b/few_shot_fixed/model_evaluation.json.gz": {
+    "uncompressed_sha256": "63e87eac4e7b3de135ffa2b7eabc359becacb983a2ba130f6999e5470e2be81c",
+    "uncompressed_bytes": 31648905
+  },
+  "outputs/qwen25_72b/few_shot_retrieval/model_responses.json.gz": {
+    "uncompressed_sha256": "b9160b69a7a758b3d2f6af8dd58f21b4eb5057abcac22896665de14a86307b1c",
+    "uncompressed_bytes": 26313655
+  },
+  "outputs/qwen25_72b/few_shot_retrieval/model_evaluation.json.gz": {
+    "uncompressed_sha256": "d8253af8e0735000702dac2c64e1b66c4635232aae12a549fe302636510cbdf0",
+    "uncompressed_bytes": 30886610
+  },
+  "outputs/qwen25_72b/semantic_retrieval/model_responses.json.gz": {
+    "uncompressed_sha256": "b00a31a4344dc714895f78cf85eab828b2961feb4e6d060994de1237882c853e",
+    "uncompressed_bytes": 26472760
+  },
+  "outputs/qwen25_72b/semantic_retrieval/model_evaluation.json.gz": {
+    "uncompressed_sha256": "050e86976180eec270c461c428f6cd0986714d38b8a015bb5fafb5fc34d25e32",
+    "uncompressed_bytes": 31192178
+  },
+  "outputs/qwen25_72b/cot_few_shot/model_responses.json.gz": {
+    "uncompressed_sha256": "f46d93c9c77493733fa6405c8e852d7a0a69dc5cf4870c90dd35b6f8c852131a",
+    "uncompressed_bytes": 26846878
+  },
+  "outputs/qwen25_72b/cot_few_shot/model_evaluation.json.gz": {
+    "uncompressed_sha256": "9bb53b1b9360db6f6615cf2525e213c6d589fd1d5149fa771fc7807dc6ebc6ec",
+    "uncompressed_bytes": 35875398
+  },
+  "outputs/qwen25_72b/zero_shot/model_responses.json.gz": {
+    "uncompressed_sha256": "afb9e09f8e4570067d377c04efbae806474b75f0647d2358b38e541dcd53e3ca",
+    "uncompressed_bytes": 13918858
+  },
+  "outputs/qwen25_72b/zero_shot/model_evaluation.json.gz": {
+    "uncompressed_sha256": "3d34ce9ecac0d2abf410a329f9fac48c9436a04713477fc76ae871682692c62e",
+    "uncompressed_bytes": 19046193
+  },
+  "outputs/qwen25_72b/critique_refine/model_responses.json.gz": {
+    "uncompressed_sha256": "9e991fa5c346eff229c513a86a4b98b12ee87423fe5f256f45a46661ca779de5",
+    "uncompressed_bytes": 18681941
+  },
+  "outputs/qwen25_72b/critique_refine/model_evaluation.json.gz": {
+    "uncompressed_sha256": "6bc7249598545eb687d6b7bdbb94b79c7e0ac74e6c677c7de03b4ad1fc2f217c",
+    "uncompressed_bytes": 23628789
+  },
+  "outputs/qwen25_72b/few_shot_fixed/model_responses.json.gz": {
+    "uncompressed_sha256": "4eb2bc043857fd7c78a448a3722c931ad7ab21f729f520f6002adcf6047b24e1",
+    "uncompressed_bytes": 26746600
+  },
+  "outputs/qwen25_72b/few_shot_fixed/model_evaluation.json.gz": {
+    "uncompressed_sha256": "db06d65ae27952bc95d63654cd79d782cfa98fa8b33516fc02dd277d16817c16",
+    "uncompressed_bytes": 31761609
+  }
+}

@@ -1,0 +1,35 @@
+# Secrets and environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python, test, editor, and OS caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local runs and regenerable model caches
+runs/
+data/processed/
+*.npz
+
+# Build and temporary files
+build/
+dist/
+*.egg-info/
+*.bak
+*.tmp
+*.temp
+
+# Published compressed archives in outputs/ are intentionally tracked.
+outputs/**/*.json

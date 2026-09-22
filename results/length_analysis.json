@@ -1,0 +1,520 @@
+{
+  "protocol": {
+    "reference_sentences": 2077,
+    "reference_non_punctuation_tokens": 21998,
+    "length_definition": "number of gold non-PUNCT tokens",
+    "zero_scored_token_sentences_excluded_from_bins": 31,
+    "missing_or_unscorable_policy": "zero correct; sentence and gold tokens retained",
+    "status": "post-hoc descriptive analysis; no interaction test"
+  },
+  "models": {
+    "gpt_oss_120b": {
+      "zero_shot": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4492,
+          "las_correct": 3927,
+          "uas": 0.7813532788311011,
+          "las": 0.6830753174465124
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 5937,
+          "las_correct": 5094,
+          "uas": 0.7591100882240123,
+          "las": 0.6513233601841196
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3627,
+          "las_correct": 3099,
+          "uas": 0.7573606180831072,
+          "las": 0.6471079557318856
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2024,
+          "las_correct": 1737,
+          "uas": 0.6728723404255319,
+          "las": 0.5774601063829787
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 439,
+          "las_correct": 368,
+          "uas": 0.6957210776545166,
+          "las": 0.5832012678288431
+        }
+      },
+      "few_shot_fixed": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4487,
+          "las_correct": 3975,
+          "uas": 0.7804835623586711,
+          "las": 0.6914245955818403
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6037,
+          "las_correct": 5333,
+          "uas": 0.7718961769594681,
+          "las": 0.6818821122618591
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3670,
+          "las_correct": 3205,
+          "uas": 0.7663395280851952,
+          "las": 0.6692420129463353
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2218,
+          "las_correct": 1945,
+          "uas": 0.7373670212765957,
+          "las": 0.6466090425531915
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 421,
+          "las_correct": 350,
+          "uas": 0.6671949286846276,
+          "las": 0.554675118858954
+        }
+      },
+      "few_shot_retrieval": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4930,
+          "las_correct": 4534,
+          "uas": 0.857540441815968,
+          "las": 0.788658897199513
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6401,
+          "las_correct": 5803,
+          "uas": 0.8184375399565273,
+          "las": 0.7419767293185014
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3798,
+          "las_correct": 3348,
+          "uas": 0.7930674462309459,
+          "las": 0.6991021089997912
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2149,
+          "las_correct": 1882,
+          "uas": 0.7144281914893617,
+          "las": 0.6256648936170213
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 412,
+          "las_correct": 360,
+          "uas": 0.652931854199683,
+          "las": 0.5705229793977813
+        }
+      },
+      "semantic_retrieval": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4836,
+          "las_correct": 4369,
+          "uas": 0.8411897721342843,
+          "las": 0.7599582536093233
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6266,
+          "las_correct": 5563,
+          "uas": 0.8011763201636619,
+          "las": 0.7112901163534074
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3748,
+          "las_correct": 3285,
+          "uas": 0.782626853205262,
+          "las": 0.6859469617874295
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2213,
+          "las_correct": 1932,
+          "uas": 0.7357047872340425,
+          "las": 0.6422872340425532
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 447,
+          "las_correct": 367,
+          "uas": 0.7083993660855784,
+          "las": 0.5816164817749604
+        }
+      },
+      "cot_few_shot": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4618,
+          "las_correct": 4123,
+          "uas": 0.8032701339363367,
+          "las": 0.717168203165768
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6225,
+          "las_correct": 5588,
+          "uas": 0.7959340237821251,
+          "las": 0.7144866385372715
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3796,
+          "las_correct": 3363,
+          "uas": 0.7926498225099186,
+          "las": 0.7022342869074963
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2261,
+          "las_correct": 1992,
+          "uas": 0.7516622340425532,
+          "las": 0.6622340425531915
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 382,
+          "las_correct": 324,
+          "uas": 0.6053882725832013,
+          "las": 0.5134706814580031
+        }
+      },
+      "critique_refine": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4605,
+          "las_correct": 4114,
+          "uas": 0.8010088711080188,
+          "las": 0.715602713515394
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6245,
+          "las_correct": 5578,
+          "uas": 0.7984912415292162,
+          "las": 0.7132080296637259
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3836,
+          "las_correct": 3393,
+          "uas": 0.8010022969304657,
+          "las": 0.7084986427229066
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2312,
+          "las_correct": 2049,
+          "uas": 0.7686170212765957,
+          "las": 0.6811835106382979
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 412,
+          "las_correct": 353,
+          "uas": 0.652931854199683,
+          "las": 0.5594294770206022
+        }
+      }
+    },
+    "qwen25_72b": {
+      "zero_shot": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4304,
+          "las_correct": 3548,
+          "uas": 0.7486519394677336,
+          "las": 0.6171508088363193
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 5966,
+          "las_correct": 4998,
+          "uas": 0.7628180539572945,
+          "las": 0.6390487149980821
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3719,
+          "las_correct": 3070,
+          "uas": 0.7765713092503654,
+          "las": 0.6410524117769889
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2220,
+          "las_correct": 1850,
+          "uas": 0.738031914893617,
+          "las": 0.6150265957446809
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 441,
+          "las_correct": 364,
+          "uas": 0.6988906497622821,
+          "las": 0.5768621236133122
+        }
+      },
+      "few_shot_fixed": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4345,
+          "las_correct": 3729,
+          "uas": 0.7557836145416594,
+          "las": 0.6486345451382849
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 5995,
+          "las_correct": 5179,
+          "uas": 0.7665260196905767,
+          "las": 0.6621915356092571
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3754,
+          "las_correct": 3197,
+          "uas": 0.7838797243683441,
+          "las": 0.6675715180622259
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2223,
+          "las_correct": 1877,
+          "uas": 0.739029255319149,
+          "las": 0.6240026595744681
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 461,
+          "las_correct": 386,
+          "uas": 0.7305863708399366,
+          "las": 0.6117274167987322
+        }
+      },
+      "few_shot_retrieval": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4921,
+          "las_correct": 4486,
+          "uas": 0.855974952165594,
+          "las": 0.7803096190641851
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6340,
+          "las_correct": 5694,
+          "uas": 0.8106380258278992,
+          "las": 0.7280398925968546
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3926,
+          "las_correct": 3423,
+          "uas": 0.8197953643766966,
+          "las": 0.7147629985383169
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2384,
+          "las_correct": 2088,
+          "uas": 0.7925531914893617,
+          "las": 0.6941489361702128
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 481,
+          "las_correct": 407,
+          "uas": 0.7622820919175911,
+          "las": 0.6450079239302694
+        }
+      },
+      "semantic_retrieval": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4820,
+          "las_correct": 4292,
+          "uas": 0.8384066794225082,
+          "las": 0.7465646199339016
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 6316,
+          "las_correct": 5526,
+          "uas": 0.8075693645313898,
+          "las": 0.7065592635212888
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3885,
+          "las_correct": 3313,
+          "uas": 0.8112340780956359,
+          "las": 0.6917936938818124
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2301,
+          "las_correct": 1992,
+          "uas": 0.7649601063829787,
+          "las": 0.6622340425531915
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 450,
+          "las_correct": 385,
+          "uas": 0.7131537242472267,
+          "las": 0.6101426307448494
+        }
+      },
+      "cot_few_shot": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4169,
+          "las_correct": 3614,
+          "uas": 0.7251695947121238,
+          "las": 0.6286310662723952
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 5782,
+          "las_correct": 4943,
+          "uas": 0.7392916506840558,
+          "las": 0.6320163661935814
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3519,
+          "las_correct": 2964,
+          "uas": 0.73480893714763,
+          "las": 0.6189183545625392
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2144,
+          "las_correct": 1802,
+          "uas": 0.7127659574468085,
+          "las": 0.5990691489361702
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 323,
+          "las_correct": 247,
+          "uas": 0.5118858954041204,
+          "las": 0.39144215530903326
+        }
+      },
+      "critique_refine": {
+        "1–10": {
+          "sentences": 1227,
+          "total_tokens": 5749,
+          "uas_correct": 4265,
+          "las_correct": 3671,
+          "uas": 0.7418681509827796,
+          "las": 0.6385458340580971
+        },
+        "11–20": {
+          "sentences": 533,
+          "total_tokens": 7821,
+          "uas_correct": 5957,
+          "las_correct": 5093,
+          "uas": 0.7616673059711034,
+          "las": 0.6511954992967651
+        },
+        "21–30": {
+          "sentences": 194,
+          "total_tokens": 4789,
+          "uas_correct": 3660,
+          "las_correct": 3093,
+          "uas": 0.7642514094800584,
+          "las": 0.6458550845688035
+        },
+        "31–50": {
+          "sentences": 81,
+          "total_tokens": 3008,
+          "uas_correct": 2206,
+          "las_correct": 1865,
+          "uas": 0.7333776595744681,
+          "las": 0.6200132978723404
+        },
+        "51+": {
+          "sentences": 11,
+          "total_tokens": 631,
+          "uas_correct": 328,
+          "las_correct": 266,
+          "uas": 0.5198098256735341,
+          "las": 0.4215530903328051
+        }
+      }
+    }
+  }
+}

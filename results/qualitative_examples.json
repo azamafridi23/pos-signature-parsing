@@ -1,0 +1,3289 @@
+{
+  "selection_protocol": {
+    "semantic_wins": "largest positive difference in LAS-correct token count for Semantic minus POS-Signature among schema-valid pairs; ties by more scored tokens, model order, then sentence id",
+    "syntax_failure": "longest schema-valid query with zero LAS-correct tokens under POS-Signature; ties by model order then sentence id",
+    "critique_regression": "largest number of LAS-correct CoT tokens changed to incorrect by Critique-Refine; ties by more scored tokens, model order, then sentence id"
+  },
+  "semantic_wins": {
+    "model": "gpt_oss_120b",
+    "sent_id": "weblog-blogspot.com_tacitusproject_20040715092419_ENG_20040715_092419-0001",
+    "text": "Important news such as President Bush's miniscule calibrations on his marriage amendment/anti-gay (update: he's not against gays in the bedroom, just at the altar, where of course their relationships should not only be frowned upon but should be constitutionally excluded) has pushed Sudan not just off the front pages, or the A section, but out of the NY Times and Washington Post completely.",
+    "scored_tokens": 67,
+    "gold": [
+      {
+        "id": 1,
+        "form": "Important",
+        "lemma": "important",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 2,
+        "deprel": "amod"
+      },
+      {
+        "id": 2,
+        "form": "news",
+        "lemma": "news",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 51,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 3,
+        "form": "such",
+        "lemma": "such",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos|ExtPos=ADP",
+        "head": 9,
+        "deprel": "case"
+      },
+      {
+        "id": 4,
+        "form": "as",
+        "lemma": "as",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 3,
+        "deprel": "fixed"
+      },
+      {
+        "id": 5,
+        "form": "President",
+        "lemma": "President",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 6,
+        "deprel": "nmod:desc"
+      },
+      {
+        "id": 6,
+        "form": "Bush",
+        "lemma": "Bush",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 9,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 7,
+        "form": "'s",
+        "lemma": "'s",
+        "upos": "PART",
+        "xpos": "POS",
+        "feats": "_",
+        "head": 6,
+        "deprel": "case"
+      },
+      {
+        "id": 8,
+        "form": "miniscule",
+        "lemma": "miniscule",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 9,
+        "deprel": "amod"
+      },
+      {
+        "id": 9,
+        "form": "calibrations",
+        "lemma": "calibration",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 2,
+        "deprel": "nmod"
+      },
+      {
+        "id": 10,
+        "form": "on",
+        "lemma": "on",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 13,
+        "deprel": "case"
+      },
+      {
+        "id": 11,
+        "form": "his",
+        "lemma": "his",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Case=Gen|Gender=Masc|Number=Sing|Person=3|Poss=Yes|PronType=Prs",
+        "head": 13,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 12,
+        "form": "marriage",
+        "lemma": "marriage",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 13,
+        "deprel": "compound"
+      },
+      {
+        "id": 13,
+        "form": "amendment",
+        "lemma": "amendment",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 9,
+        "deprel": "nmod"
+      },
+      {
+        "id": 14,
+        "form": "/",
+        "lemma": "/",
+        "upos": "SYM",
+        "xpos": "SYM",
+        "feats": "_",
+        "head": 15,
+        "deprel": "cc"
+      },
+      {
+        "id": 15,
+        "form": "anti-gay",
+        "lemma": "anti-gay",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 13,
+        "deprel": "conj"
+      },
+      {
+        "id": 16,
+        "form": "(",
+        "lemma": "(",
+        "upos": "PUNCT",
+        "xpos": "-LRB-",
+        "feats": "_",
+        "head": 17,
+        "deprel": "punct"
+      },
+      {
+        "id": 17,
+        "form": "update",
+        "lemma": "update",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 15,
+        "deprel": "parataxis"
+      },
+      {
+        "id": 18,
+        "form": ":",
+        "lemma": ":",
+        "upos": "PUNCT",
+        "xpos": ":",
+        "feats": "_",
+        "head": 23,
+        "deprel": "punct"
+      },
+      {
+        "id": 19,
+        "form": "he",
+        "lemma": "he",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs",
+        "head": 23,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 20,
+        "form": "'s",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 23,
+        "deprel": "cop"
+      },
+      {
+        "id": 21,
+        "form": "not",
+        "lemma": "not",
+        "upos": "PART",
+        "xpos": "RB",
+        "feats": "Polarity=Neg",
+        "head": 23,
+        "deprel": "advmod"
+      },
+      {
+        "id": 22,
+        "form": "against",
+        "lemma": "against",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 23,
+        "deprel": "case"
+      },
+      {
+        "id": 23,
+        "form": "gays",
+        "lemma": "gay",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 17,
+        "deprel": "parataxis"
+      },
+      {
+        "id": 24,
+        "form": "in",
+        "lemma": "in",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 26,
+        "deprel": "case"
+      },
+      {
+        "id": 25,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 26,
+        "deprel": "det"
+      },
+      {
+        "id": 26,
+        "form": "bedroom",
+        "lemma": "bedroom",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 23,
+        "deprel": "nmod"
+      },
+      {
+        "id": 27,
+        "form": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "feats": "_",
+        "head": 31,
+        "deprel": "punct"
+      },
+      {
+        "id": 28,
+        "form": "just",
+        "lemma": "just",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "_",
+        "head": 31,
+        "deprel": "advmod"
+      },
+      {
+        "id": 29,
+        "form": "at",
+        "lemma": "at",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 31,
+        "deprel": "case"
+      },
+      {
+        "id": 30,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 31,
+        "deprel": "det"
+      },
+      {
+        "id": 31,
+        "form": "altar",
+        "lemma": "altar",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 26,
+        "deprel": "parataxis"
+      },
+      {
+        "id": 32,
+        "form": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "feats": "_",
+        "head": 42,
+        "deprel": "punct"
+      },
+      {
+        "id": 33,
+        "form": "where",
+        "lemma": "where",
+        "upos": "ADV",
+        "xpos": "WRB",
+        "feats": "PronType=Rel",
+        "head": 42,
+        "deprel": "advmod"
+      },
+      {
+        "id": 34,
+        "form": "of",
+        "lemma": "of",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "ExtPos=ADV",
+        "head": 42,
+        "deprel": "advmod"
+      },
+      {
+        "id": 35,
+        "form": "course",
+        "lemma": "course",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 34,
+        "deprel": "fixed"
+      },
+      {
+        "id": 36,
+        "form": "their",
+        "lemma": "their",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Case=Gen|Number=Plur|Person=3|Poss=Yes|PronType=Prs",
+        "head": 37,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 37,
+        "form": "relationships",
+        "lemma": "relationship",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 42,
+        "deprel": "nsubj:pass"
+      },
+      {
+        "id": 38,
+        "form": "should",
+        "lemma": "should",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 42,
+        "deprel": "aux"
+      },
+      {
+        "id": 39,
+        "form": "not",
+        "lemma": "not",
+        "upos": "PART",
+        "xpos": "RB",
+        "feats": "Polarity=Neg",
+        "head": 42,
+        "deprel": "advmod"
+      },
+      {
+        "id": 40,
+        "form": "only",
+        "lemma": "only",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "_",
+        "head": 42,
+        "deprel": "advmod"
+      },
+      {
+        "id": 41,
+        "form": "be",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 42,
+        "deprel": "aux:pass"
+      },
+      {
+        "id": 42,
+        "form": "frowned",
+        "lemma": "frown",
+        "upos": "VERB",
+        "xpos": "VBN",
+        "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+        "head": 31,
+        "deprel": "acl:relcl"
+      },
+      {
+        "id": 43,
+        "form": "upon",
+        "lemma": "upon",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 42,
+        "deprel": "obl"
+      },
+      {
+        "id": 44,
+        "form": "but",
+        "lemma": "but",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "feats": "_",
+        "head": 48,
+        "deprel": "cc"
+      },
+      {
+        "id": 45,
+        "form": "should",
+        "lemma": "should",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 48,
+        "deprel": "aux"
+      },
+      {
+        "id": 46,
+        "form": "be",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 48,
+        "deprel": "aux:pass"
+      },
+      {
+        "id": 47,
+        "form": "constitutionally",
+        "lemma": "constitutionally",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "_",
+        "head": 48,
+        "deprel": "advmod"
+      },
+      {
+        "id": 48,
+        "form": "excluded",
+        "lemma": "exclude",
+        "upos": "VERB",
+        "xpos": "VBN",
+        "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+        "head": 42,
+        "deprel": "conj"
+      },
+      {
+        "id": 49,
+        "form": ")",
+        "lemma": ")",
+        "upos": "PUNCT",
+        "xpos": "-RRB-",
+        "feats": "_",
+        "head": 17,
+        "deprel": "punct"
+      },
+      {
+        "id": 50,
+        "form": "has",
+        "lemma": "have",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 51,
+        "deprel": "aux"
+      },
+      {
+        "id": 51,
+        "form": "pushed",
+        "lemma": "push",
+        "upos": "VERB",
+        "xpos": "VBN",
+        "feats": "Tense=Past|VerbForm=Part",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 52,
+        "form": "Sudan",
+        "lemma": "Sudan",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 51,
+        "deprel": "obj"
+      },
+      {
+        "id": 53,
+        "form": "not",
+        "lemma": "not",
+        "upos": "PART",
+        "xpos": "RB",
+        "feats": "Polarity=Neg",
+        "head": 58,
+        "deprel": "advmod"
+      },
+      {
+        "id": 54,
+        "form": "just",
+        "lemma": "just",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "_",
+        "head": 58,
+        "deprel": "advmod"
+      },
+      {
+        "id": 55,
+        "form": "off",
+        "lemma": "off",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 58,
+        "deprel": "case"
+      },
+      {
+        "id": 56,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 58,
+        "deprel": "det"
+      },
+      {
+        "id": 57,
+        "form": "front",
+        "lemma": "front",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 58,
+        "deprel": "amod"
+      },
+      {
+        "id": 58,
+        "form": "pages",
+        "lemma": "page",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 51,
+        "deprel": "obl"
+      },
+      {
+        "id": 59,
+        "form": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "feats": "_",
+        "head": 63,
+        "deprel": "punct"
+      },
+      {
+        "id": 60,
+        "form": "or",
+        "lemma": "or",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "feats": "_",
+        "head": 63,
+        "deprel": "cc"
+      },
+      {
+        "id": 61,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 63,
+        "deprel": "det"
+      },
+      {
+        "id": 62,
+        "form": "A",
+        "lemma": "A",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 63,
+        "deprel": "compound"
+      },
+      {
+        "id": 63,
+        "form": "section",
+        "lemma": "section",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 58,
+        "deprel": "conj"
+      },
+      {
+        "id": 64,
+        "form": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "feats": "_",
+        "head": 70,
+        "deprel": "punct"
+      },
+      {
+        "id": 65,
+        "form": "but",
+        "lemma": "but",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "feats": "_",
+        "head": 70,
+        "deprel": "cc"
+      },
+      {
+        "id": 66,
+        "form": "out",
+        "lemma": "out",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 70,
+        "deprel": "case"
+      },
+      {
+        "id": 67,
+        "form": "of",
+        "lemma": "of",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 70,
+        "deprel": "case"
+      },
+      {
+        "id": 68,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 70,
+        "deprel": "det"
+      },
+      {
+        "id": 69,
+        "form": "NY",
+        "lemma": "NY",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 70,
+        "deprel": "compound"
+      },
+      {
+        "id": 70,
+        "form": "Times",
+        "lemma": "Times",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 58,
+        "deprel": "conj"
+      },
+      {
+        "id": 71,
+        "form": "and",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "feats": "_",
+        "head": 73,
+        "deprel": "cc"
+      },
+      {
+        "id": 72,
+        "form": "Washington",
+        "lemma": "Washington",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 73,
+        "deprel": "compound"
+      },
+      {
+        "id": 73,
+        "form": "Post",
+        "lemma": "Post",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 70,
+        "deprel": "conj"
+      },
+      {
+        "id": 74,
+        "form": "completely",
+        "lemma": "completely",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "_",
+        "head": 70,
+        "deprel": "advmod"
+      },
+      {
+        "id": 75,
+        "form": ".",
+        "lemma": ".",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "feats": "_",
+        "head": 51,
+        "deprel": "punct"
+      }
+    ],
+    "syntax_las_correct": 20,
+    "semantic_las_correct": 39,
+    "syntax_retrieved_sentences": [
+      "Not only did Bush not know who General Pervez Musharraf was, he seems to have confused coup-making with \"taking office,\" and moreover went on to suggest that the overthrow of an elected prime minister and the installation in power of the Pakistan military, then the world's strongest supporter of the Taliban, would bring \"stability!\"",
+      "A Spanish refugee, ANTONIO PEREZ, visited England in 1593 and became acquainted with Francis & ANTHONY Bacon, with whom for a time he seems to have been on terms of intimacy, which did not last very long, for the Spaniard developed so much affectation & bombast that he became unpopular in Court circles.",
+      "True, but two in England that we know of were a part of the Essex entourage: Dr. Lopez, who had been physician to Essex' step-father, the Earl of Leicester, had apparently treated the young Essex for some socially unacceptable ailment, and Antonio Perez, who was a guest at Essex House in the early 1590's."
+    ],
+    "semantic_retrieved_sentences": [
+      "Perhaps Sudan should be added to the list.",
+      "The mass murder happening right now in Sudan, where the Arab Moslem regime is massacring its black Christian citizens, has nothing to do with Israel.",
+      "The fact that the US government and media are having a hissy fit over Venezuela wanting to buy guns, and then 200,000 of the guns Chavez wants to buy go missing on their way to Iraq is definitely sus."
+    ],
+    "syntax_prompt": {
+      "system": "You are a Universal Dependencies (UD) syntactic parser for English.\nYou will be given an English sentence and a numbered list of its tokens\n(id and word form).\n\nYour task is to produce a UD parse in JSON with this exact structure:\n{\n  \"tokens\": [\n    {\n      \"id\":     <integer, matches the input token id>,\n      \"form\":   \"<copy the word form exactly from input>\",\n      \"upos\":   \"<Universal POS tag>\",\n      \"head\":   <integer, id of syntactic head; 0 means this token is root>,\n      \"deprel\": \"<UD dependency relation label>\"\n    },\n    ...\n  ]\n}\n\nRules:\n- Output ONLY the raw JSON object. No markdown, no explanation.\n- Exactly one token must have head=0 AND deprel=\"root\". No other token\n  may use head=0 or deprel=\"root\".\n- Use UD v2 UPOS tags: ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN,\n  NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X\n- Use standard UD v2 deprel labels: acl, advcl, advmod, amod, appos,\n  aux, case, cc, ccomp, compound, conj, cop, csubj, dep, det, discourse,\n  dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod,\n  nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root,\n  vocative, xcomp\n- Subtypes are allowed using colon notation (e.g. nsubj:pass, aux:pass,\n  acl:relcl, obl:agent). Use them where appropriate.\n- Copy id and form exactly as given; do not add or remove tokens.\nHere are some similar examples and their UD parses:\n\nInput:\n# text = Not only did Bush not know who General Pervez Musharraf was, he seems to have confused coup-making with \"taking office,\" and moreover went on to suggest that the overthrow of an elected prime minister and the installation in power of the Pakistan military, then the world's strongest supporter of the Taliban, would bring \"stability!\"\n1\tNot\n2\tonly\n3\tdid\n4\tBush\n5\tnot\n6\tknow\n7\twho\n8\tGeneral\n9\tPervez\n10\tMusharraf\n11\twas\n12\t,\n13\the\n14\tseems\n15\tto\n16\thave\n17\tconfused\n18\tcoup\n19\t-\n20\tmaking\n21\twith\n22\t\"\n23\ttaking\n24\toffice\n25\t,\n26\t\"\n27\tand\n28\tmoreover\n29\twent\n30\ton\n31\tto\n32\tsuggest\n33\tthat\n34\tthe\n35\toverthrow\n36\tof\n37\tan\n38\telected\n39\tprime\n40\tminister\n41\tand\n42\tthe\n43\tinstallation\n44\tin\n45\tpower\n46\tof\n47\tthe\n48\tPakistan\n49\tmilitary\n50\t,\n51\tthen\n52\tthe\n53\tworld\n54\t's\n55\tstrongest\n56\tsupporter\n57\tof\n58\tthe\n59\tTaliban\n60\t,\n61\twould\n62\tbring\n63\t\"\n64\tstability\n65\t!\n66\t\"\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"Not\",\n      \"upos\": \"PART\",\n      \"head\": 6,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"only\",\n      \"upos\": \"ADV\",\n      \"head\": 6,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"did\",\n      \"upos\": \"AUX\",\n      \"head\": 6,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"Bush\",\n      \"upos\": \"PROPN\",\n      \"head\": 6,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"not\",\n      \"upos\": \"PART\",\n      \"head\": 6,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"know\",\n      \"upos\": \"VERB\",\n      \"head\": 14,\n      \"deprel\": \"parataxis\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"who\",\n      \"upos\": \"PRON\",\n      \"head\": 6,\n      \"deprel\": \"ccomp\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"General\",\n      \"upos\": \"PROPN\",\n      \"head\": 9,\n      \"deprel\": \"nmod:desc\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"Pervez\",\n      \"upos\": \"PROPN\",\n      \"head\": 7,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"Musharraf\",\n      \"upos\": \"PROPN\",\n      \"head\": 9,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \"was\",\n      \"upos\": \"AUX\",\n      \"head\": 7,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 6,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"he\",\n      \"upos\": \"PRON\",\n      \"head\": 14,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"seems\",\n      \"upos\": \"VERB\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 17,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"have\",\n      \"upos\": \"AUX\",\n      \"head\": 17,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"confused\",\n      \"upos\": \"VERB\",\n      \"head\": 14,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \"coup\",\n      \"upos\": \"NOUN\",\n      \"head\": 20,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \"-\",\n      \"upos\": \"PUNCT\",\n      \"head\": 18,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 20,\n      \"form\": \"making\",\n      \"upos\": \"NOUN\",\n      \"head\": 17,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 21,\n      \"form\": \"with\",\n      \"upos\": \"ADP\",\n      \"head\": 23,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 22,\n      \"form\": \"\\\"\",\n      \"upos\": \"PUNCT\",\n      \"head\": 23,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 23,\n      \"form\": \"taking\",\n      \"upos\": \"VERB\",\n      \"head\": 17,\n      \"deprel\": \"advcl\"\n    },\n    {\n      \"id\": 24,\n      \"form\": \"office\",\n      \"upos\": \"NOUN\",\n      \"head\": 23,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 25,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 23,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 26,\n      \"form\": \"\\\"\",\n      \"upos\": \"PUNCT\",\n      \"head\": 23,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 27,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 29,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 28,\n      \"form\": \"moreover\",\n      \"upos\": \"ADV\",\n      \"head\": 29,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 29,\n      \"form\": \"went\",\n      \"upos\": \"VERB\",\n      \"head\": 14,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 30,\n      \"form\": \"on\",\n      \"upos\": \"ADV\",\n      \"head\": 29,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 31,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 32,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 32,\n      \"form\": \"suggest\",\n      \"upos\": \"VERB\",\n      \"head\": 29,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 33,\n      \"form\": \"that\",\n      \"upos\": \"SCONJ\",\n      \"head\": 62,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 34,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 35,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 35,\n      \"form\": \"overthrow\",\n      \"upos\": \"NOUN\",\n      \"head\": 62,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 36,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 40,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 37,\n      \"form\": \"an\",\n      \"upos\": \"DET\",\n      \"head\": 40,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 38,\n      \"form\": \"elected\",\n      \"upos\": \"VERB\",\n      \"head\": 40,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 39,\n      \"form\": \"prime\",\n      \"upos\": \"ADJ\",\n      \"head\": 40,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 40,\n      \"form\": \"minister\",\n      \"upos\": \"NOUN\",\n      \"head\": 35,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 41,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 43,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 42,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 43,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 43,\n      \"form\": \"installation\",\n      \"upos\": \"NOUN\",\n      \"head\": 35,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 44,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 45,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 45,\n      \"form\": \"power\",\n      \"upos\": \"NOUN\",\n      \"head\": 43,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 46,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 49,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 47,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 49,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 48,\n      \"form\": \"Pakistan\",\n      \"upos\": \"PROPN\",\n      \"head\": 49,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 49,\n      \"form\": \"military\",\n      \"upos\": \"NOUN\",\n      \"head\": 43,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 50,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 56,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 51,\n      \"form\": \"then\",\n      \"upos\": \"ADV\",\n      \"head\": 56,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 52,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 53,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 53,\n      \"form\": \"world\",\n      \"upos\": \"NOUN\",\n      \"head\": 56,\n      \"deprel\": \"nmod:poss\"\n    },\n    {\n      \"id\": 54,\n      \"form\": \"'s\",\n      \"upos\": \"PART\",\n      \"head\": 53,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 55,\n      \"form\": \"strongest\",\n      \"upos\": \"ADJ\",\n      \"head\": 56,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 56,\n      \"form\": \"supporter\",\n      \"upos\": \"NOUN\",\n      \"head\": 49,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 57,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 59,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 58,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 59,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 59,\n      \"form\": \"Taliban\",\n      \"upos\": \"PROPN\",\n      \"head\": 56,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 60,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 35,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 61,\n      \"form\": \"would\",\n      \"upos\": \"AUX\",\n      \"head\": 62,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 62,\n      \"form\": \"bring\",\n      \"upos\": \"VERB\",\n      \"head\": 32,\n      \"deprel\": \"ccomp\"\n    },\n    {\n      \"id\": 63,\n      \"form\": \"\\\"\",\n      \"upos\": \"PUNCT\",\n      \"head\": 64,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 64,\n      \"form\": \"stability\",\n      \"upos\": \"NOUN\",\n      \"head\": 62,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 65,\n      \"form\": \"!\",\n      \"upos\": \"PUNCT\",\n      \"head\": 64,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 66,\n      \"form\": \"\\\"\",\n      \"upos\": \"PUNCT\",\n      \"head\": 64,\n      \"deprel\": \"punct\"\n    }\n  ]\n}\n\nInput:\n# text = A Spanish refugee, ANTONIO PEREZ, visited England in 1593 and became acquainted with Francis & ANTHONY Bacon, with whom for a time he seems to have been on terms of intimacy, which did not last very long, for the Spaniard developed so much affectation & bombast that he became unpopular in Court circles.\n1\tA\n2\tSpanish\n3\trefugee\n4\t,\n5\tANTONIO\n6\tPEREZ\n7\t,\n8\tvisited\n9\tEngland\n10\tin\n11\t1593\n12\tand\n13\tbecame\n14\tacquainted\n15\twith\n16\tFrancis\n17\t&\n18\tANTHONY\n19\tBacon\n20\t,\n21\twith\n22\twhom\n23\tfor\n24\ta\n25\ttime\n26\the\n27\tseems\n28\tto\n29\thave\n30\tbeen\n31\ton\n32\tterms\n33\tof\n34\tintimacy\n35\t,\n36\twhich\n37\tdid\n38\tnot\n39\tlast\n40\tvery\n41\tlong\n42\t,\n43\tfor\n44\tthe\n45\tSpaniard\n46\tdeveloped\n47\tso\n48\tmuch\n49\taffectation\n50\t&\n51\tbombast\n52\tthat\n53\the\n54\tbecame\n55\tunpopular\n56\tin\n57\tCourt\n58\tcircles\n59\t.\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"A\",\n      \"upos\": \"DET\",\n      \"head\": 3,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"Spanish\",\n      \"upos\": \"ADJ\",\n      \"head\": 3,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"refugee\",\n      \"upos\": \"NOUN\",\n      \"head\": 8,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 5,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"ANTONIO\",\n      \"upos\": \"PROPN\",\n      \"head\": 3,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"PEREZ\",\n      \"upos\": \"PROPN\",\n      \"head\": 5,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 3,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"visited\",\n      \"upos\": \"VERB\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"England\",\n      \"upos\": \"PROPN\",\n      \"head\": 8,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 11,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \"1593\",\n      \"upos\": \"NUM\",\n      \"head\": 8,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 13,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"became\",\n      \"upos\": \"VERB\",\n      \"head\": 8,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"acquainted\",\n      \"upos\": \"ADJ\",\n      \"head\": 13,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \"with\",\n      \"upos\": \"ADP\",\n      \"head\": 16,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"Francis\",\n      \"upos\": \"PROPN\",\n      \"head\": 14,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"&\",\n      \"upos\": \"CCONJ\",\n      \"head\": 18,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \"ANTHONY\",\n      \"upos\": \"PROPN\",\n      \"head\": 16,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \"Bacon\",\n      \"upos\": \"PROPN\",\n      \"head\": 16,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 20,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 27,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 21,\n      \"form\": \"with\",\n      \"upos\": \"ADP\",\n      \"head\": 22,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 22,\n      \"form\": \"whom\",\n      \"upos\": \"PRON\",\n      \"head\": 32,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 23,\n      \"form\": \"for\",\n      \"upos\": \"ADP\",\n      \"head\": 25,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 24,\n      \"form\": \"a\",\n      \"upos\": \"DET\",\n      \"head\": 25,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 25,\n      \"form\": \"time\",\n      \"upos\": \"NOUN\",\n      \"head\": 27,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 26,\n      \"form\": \"he\",\n      \"upos\": \"PRON\",\n      \"head\": 27,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 27,\n      \"form\": \"seems\",\n      \"upos\": \"VERB\",\n      \"head\": 18,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 28,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 32,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 29,\n      \"form\": \"have\",\n      \"upos\": \"AUX\",\n      \"head\": 32,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 30,\n      \"form\": \"been\",\n      \"upos\": \"AUX\",\n      \"head\": 32,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 31,\n      \"form\": \"on\",\n      \"upos\": \"ADP\",\n      \"head\": 32,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 32,\n      \"form\": \"terms\",\n      \"upos\": \"NOUN\",\n      \"head\": 27,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 33,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 34,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 34,\n      \"form\": \"intimacy\",\n      \"upos\": \"NOUN\",\n      \"head\": 32,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 35,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 39,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 36,\n      \"form\": \"which\",\n      \"upos\": \"PRON\",\n      \"head\": 39,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 37,\n      \"form\": \"did\",\n      \"upos\": \"AUX\",\n      \"head\": 39,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 38,\n      \"form\": \"not\",\n      \"upos\": \"PART\",\n      \"head\": 39,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 39,\n      \"form\": \"last\",\n      \"upos\": \"VERB\",\n      \"head\": 32,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 40,\n      \"form\": \"very\",\n      \"upos\": \"ADV\",\n      \"head\": 41,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 41,\n      \"form\": \"long\",\n      \"upos\": \"ADV\",\n      \"head\": 39,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 42,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 46,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 43,\n      \"form\": \"for\",\n      \"upos\": \"SCONJ\",\n      \"head\": 46,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 44,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 45,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 45,\n      \"form\": \"Spaniard\",\n      \"upos\": \"PROPN\",\n      \"head\": 46,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 46,\n      \"form\": \"developed\",\n      \"upos\": \"VERB\",\n      \"head\": 39,\n      \"deprel\": \"advcl\"\n    },\n    {\n      \"id\": 47,\n      \"form\": \"so\",\n      \"upos\": \"ADV\",\n      \"head\": 48,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 48,\n      \"form\": \"much\",\n      \"upos\": \"ADJ\",\n      \"head\": 49,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 49,\n      \"form\": \"affectation\",\n      \"upos\": \"NOUN\",\n      \"head\": 46,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 50,\n      \"form\": \"&\",\n      \"upos\": \"CCONJ\",\n      \"head\": 51,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 51,\n      \"form\": \"bombast\",\n      \"upos\": \"NOUN\",\n      \"head\": 49,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 52,\n      \"form\": \"that\",\n      \"upos\": \"SCONJ\",\n      \"head\": 54,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 53,\n      \"form\": \"he\",\n      \"upos\": \"PRON\",\n      \"head\": 54,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 54,\n      \"form\": \"became\",\n      \"upos\": \"VERB\",\n      \"head\": 48,\n      \"deprel\": \"advcl\"\n    },\n    {\n      \"id\": 55,\n      \"form\": \"unpopular\",\n      \"upos\": \"ADJ\",\n      \"head\": 54,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 56,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 58,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 57,\n      \"form\": \"Court\",\n      \"upos\": \"NOUN\",\n      \"head\": 58,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 58,\n      \"form\": \"circles\",\n      \"upos\": \"NOUN\",\n      \"head\": 55,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 59,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 8,\n      \"deprel\": \"punct\"\n    }\n  ]\n}\n\nInput:\n# text = True, but two in England that we know of were a part of the Essex entourage: Dr. Lopez, who had been physician to Essex' step-father, the Earl of Leicester, had apparently treated the young Essex for some socially unacceptable ailment, and Antonio Perez, who was a guest at Essex House in the early 1590's.\n1\tTrue\n2\t,\n3\tbut\n4\ttwo\n5\tin\n6\tEngland\n7\tthat\n8\twe\n9\tknow\n10\tof\n11\twere\n12\ta\n13\tpart\n14\tof\n15\tthe\n16\tEssex\n17\tentourage\n18\t:\n19\tDr.\n20\tLopez\n21\t,\n22\twho\n23\thad\n24\tbeen\n25\tphysician\n26\tto\n27\tEssex\n28\t'\n29\tstep\n30\t-\n31\tfather\n32\t,\n33\tthe\n34\tEarl\n35\tof\n36\tLeicester\n37\t,\n38\thad\n39\tapparently\n40\ttreated\n41\tthe\n42\tyoung\n43\tEssex\n44\tfor\n45\tsome\n46\tsocially\n47\tunacceptable\n48\tailment\n49\t,\n50\tand\n51\tAntonio\n52\tPerez\n53\t,\n54\twho\n55\twas\n56\ta\n57\tguest\n58\tat\n59\tEssex\n60\tHouse\n61\tin\n62\tthe\n63\tearly\n64\t1590's\n65\t.\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"True\",\n      \"upos\": \"ADJ\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 13,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"but\",\n      \"upos\": \"CCONJ\",\n      \"head\": 13,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"two\",\n      \"upos\": \"NUM\",\n      \"head\": 13,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 6,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"England\",\n      \"upos\": \"PROPN\",\n      \"head\": 4,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"that\",\n      \"upos\": \"PRON\",\n      \"head\": 9,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"we\",\n      \"upos\": \"PRON\",\n      \"head\": 9,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"know\",\n      \"upos\": \"VERB\",\n      \"head\": 4,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 7,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \"were\",\n      \"upos\": \"AUX\",\n      \"head\": 13,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \"a\",\n      \"upos\": \"DET\",\n      \"head\": 13,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"part\",\n      \"upos\": \"NOUN\",\n      \"head\": 1,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 17,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 17,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"Essex\",\n      \"upos\": \"PROPN\",\n      \"head\": 17,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"entourage\",\n      \"upos\": \"NOUN\",\n      \"head\": 13,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \":\",\n      \"upos\": \"PUNCT\",\n      \"head\": 13,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \"Dr.\",\n      \"upos\": \"PROPN\",\n      \"head\": 20,\n      \"deprel\": \"nmod:desc\"\n    },\n    {\n      \"id\": 20,\n      \"form\": \"Lopez\",\n      \"upos\": \"PROPN\",\n      \"head\": 1,\n      \"deprel\": \"parataxis\"\n    },\n    {\n      \"id\": 21,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 25,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 22,\n      \"form\": \"who\",\n      \"upos\": \"PRON\",\n      \"head\": 25,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 23,\n      \"form\": \"had\",\n      \"upos\": \"AUX\",\n      \"head\": 25,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 24,\n      \"form\": \"been\",\n      \"upos\": \"AUX\",\n      \"head\": 25,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 25,\n      \"form\": \"physician\",\n      \"upos\": \"NOUN\",\n      \"head\": 20,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 26,\n      \"form\": \"to\",\n      \"upos\": \"ADP\",\n      \"head\": 31,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 27,\n      \"form\": \"Essex\",\n      \"upos\": \"PROPN\",\n      \"head\": 31,\n      \"deprel\": \"nmod:poss\"\n    },\n    {\n      \"id\": 28,\n      \"form\": \"'\",\n      \"upos\": \"PART\",\n      \"head\": 27,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 29,\n      \"form\": \"step\",\n      \"upos\": \"NOUN\",\n      \"head\": 31,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 30,\n      \"form\": \"-\",\n      \"upos\": \"PUNCT\",\n      \"head\": 29,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 31,\n      \"form\": \"father\",\n      \"upos\": \"NOUN\",\n      \"head\": 25,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 32,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 34,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 33,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 34,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 34,\n      \"form\": \"Earl\",\n      \"upos\": \"PROPN\",\n      \"head\": 31,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 35,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 36,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 36,\n      \"form\": \"Leicester\",\n      \"upos\": \"PROPN\",\n      \"head\": 34,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 37,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 25,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 38,\n      \"form\": \"had\",\n      \"upos\": \"AUX\",\n      \"head\": 40,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 39,\n      \"form\": \"apparently\",\n      \"upos\": \"ADV\",\n      \"head\": 40,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 40,\n      \"form\": \"treated\",\n      \"upos\": \"VERB\",\n      \"head\": 20,\n      \"deprel\": \"parataxis\"\n    },\n    {\n      \"id\": 41,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 43,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 42,\n      \"form\": \"young\",\n      \"upos\": \"ADJ\",\n      \"head\": 43,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 43,\n      \"form\": \"Essex\",\n      \"upos\": \"PROPN\",\n      \"head\": 40,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 44,\n      \"form\": \"for\",\n      \"upos\": \"ADP\",\n      \"head\": 48,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 45,\n      \"form\": \"some\",\n      \"upos\": \"DET\",\n      \"head\": 48,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 46,\n      \"form\": \"socially\",\n      \"upos\": \"ADV\",\n      \"head\": 47,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 47,\n      \"form\": \"unacceptable\",\n      \"upos\": \"ADJ\",\n      \"head\": 48,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 48,\n      \"form\": \"ailment\",\n      \"upos\": \"NOUN\",\n      \"head\": 40,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 49,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 51,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 50,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 51,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 51,\n      \"form\": \"Antonio\",\n      \"upos\": \"PROPN\",\n      \"head\": 20,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 52,\n      \"form\": \"Perez\",\n      \"upos\": \"PROPN\",\n      \"head\": 51,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 53,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 57,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 54,\n      \"form\": \"who\",\n      \"upos\": \"PRON\",\n      \"head\": 57,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 55,\n      \"form\": \"was\",\n      \"upos\": \"AUX\",\n      \"head\": 57,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 56,\n      \"form\": \"a\",\n      \"upos\": \"DET\",\n      \"head\": 57,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 57,\n      \"form\": \"guest\",\n      \"upos\": \"NOUN\",\n      \"head\": 51,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 58,\n      \"form\": \"at\",\n      \"upos\": \"ADP\",\n      \"head\": 60,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 59,\n      \"form\": \"Essex\",\n      \"upos\": \"PROPN\",\n      \"head\": 60,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 60,\n      \"form\": \"House\",\n      \"upos\": \"PROPN\",\n      \"head\": 57,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 61,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 64,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 62,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 64,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 63,\n      \"form\": \"early\",\n      \"upos\": \"ADJ\",\n      \"head\": 64,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 64,\n      \"form\": \"1590's\",\n      \"upos\": \"NOUN\",\n      \"head\": 57,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 65,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 1,\n      \"deprel\": \"punct\"\n    }\n  ]\n}",
+      "user": "# text = Important news such as President Bush's miniscule calibrations on his marriage amendment/anti-gay (update: he's not against gays in the bedroom, just at the altar, where of course their relationships should not only be frowned upon but should be constitutionally excluded) has pushed Sudan not just off the front pages, or the A section, but out of the NY Times and Washington Post completely.\n1\tImportant\n2\tnews\n3\tsuch\n4\tas\n5\tPresident\n6\tBush\n7\t's\n8\tminiscule\n9\tcalibrations\n10\ton\n11\this\n12\tmarriage\n13\tamendment\n14\t/\n15\tanti-gay\n16\t(\n17\tupdate\n18\t:\n19\the\n20\t's\n21\tnot\n22\tagainst\n23\tgays\n24\tin\n25\tthe\n26\tbedroom\n27\t,\n28\tjust\n29\tat\n30\tthe\n31\taltar\n32\t,\n33\twhere\n34\tof\n35\tcourse\n36\ttheir\n37\trelationships\n38\tshould\n39\tnot\n40\tonly\n41\tbe\n42\tfrowned\n43\tupon\n44\tbut\n45\tshould\n46\tbe\n47\tconstitutionally\n48\texcluded\n49\t)\n50\thas\n51\tpushed\n52\tSudan\n53\tnot\n54\tjust\n55\toff\n56\tthe\n57\tfront\n58\tpages\n59\t,\n60\tor\n61\tthe\n62\tA\n63\tsection\n64\t,\n65\tbut\n66\tout\n67\tof\n68\tthe\n69\tNY\n70\tTimes\n71\tand\n72\tWashington\n73\tPost\n74\tcompletely\n75\t."
+    },
+    "semantic_prompt": {
+      "system": "You are a Universal Dependencies (UD) syntactic parser for English.\nYou will be given an English sentence and a numbered list of its tokens\n(id and word form).\n\nYour task is to produce a UD parse in JSON with this exact structure:\n{\n  \"tokens\": [\n    {\n      \"id\":     <integer, matches the input token id>,\n      \"form\":   \"<copy the word form exactly from input>\",\n      \"upos\":   \"<Universal POS tag>\",\n      \"head\":   <integer, id of syntactic head; 0 means this token is root>,\n      \"deprel\": \"<UD dependency relation label>\"\n    },\n    ...\n  ]\n}\n\nRules:\n- Output ONLY the raw JSON object. No markdown, no explanation.\n- Exactly one token must have head=0 AND deprel=\"root\". No other token\n  may use head=0 or deprel=\"root\".\n- Use UD v2 UPOS tags: ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN,\n  NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X\n- Use standard UD v2 deprel labels: acl, advcl, advmod, amod, appos,\n  aux, case, cc, ccomp, compound, conj, cop, csubj, dep, det, discourse,\n  dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod,\n  nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root,\n  vocative, xcomp\n- Subtypes are allowed using colon notation (e.g. nsubj:pass, aux:pass,\n  acl:relcl, obl:agent). Use them where appropriate.\n- Copy id and form exactly as given; do not add or remove tokens.\nHere are some similar examples and their UD parses:\n\nInput:\n# text = Perhaps Sudan should be added to the list.\n1\tPerhaps\n2\tSudan\n3\tshould\n4\tbe\n5\tadded\n6\tto\n7\tthe\n8\tlist\n9\t.\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"Perhaps\",\n      \"upos\": \"ADV\",\n      \"head\": 5,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"Sudan\",\n      \"upos\": \"PROPN\",\n      \"head\": 5,\n      \"deprel\": \"nsubj:pass\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"should\",\n      \"upos\": \"AUX\",\n      \"head\": 5,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"be\",\n      \"upos\": \"AUX\",\n      \"head\": 5,\n      \"deprel\": \"aux:pass\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"added\",\n      \"upos\": \"VERB\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"to\",\n      \"upos\": \"ADP\",\n      \"head\": 8,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 8,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"list\",\n      \"upos\": \"NOUN\",\n      \"head\": 5,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 5,\n      \"deprel\": \"punct\"\n    }\n  ]\n}\n\nInput:\n# text = The mass murder happening right now in Sudan, where the Arab Moslem regime is massacring its black Christian citizens, has nothing to do with Israel.\n1\tThe\n2\tmass\n3\tmurder\n4\thappening\n5\tright\n6\tnow\n7\tin\n8\tSudan\n9\t,\n10\twhere\n11\tthe\n12\tArab\n13\tMoslem\n14\tregime\n15\tis\n16\tmassacring\n17\tits\n18\tblack\n19\tChristian\n20\tcitizens\n21\t,\n22\thas\n23\tnothing\n24\tto\n25\tdo\n26\twith\n27\tIsrael\n28\t.\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"The\",\n      \"upos\": \"DET\",\n      \"head\": 3,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"mass\",\n      \"upos\": \"ADJ\",\n      \"head\": 3,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"murder\",\n      \"upos\": \"NOUN\",\n      \"head\": 22,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"happening\",\n      \"upos\": \"VERB\",\n      \"head\": 3,\n      \"deprel\": \"acl\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"right\",\n      \"upos\": \"ADV\",\n      \"head\": 6,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"now\",\n      \"upos\": \"ADV\",\n      \"head\": 4,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 8,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"Sudan\",\n      \"upos\": \"PROPN\",\n      \"head\": 4,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 16,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"where\",\n      \"upos\": \"ADV\",\n      \"head\": 16,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 14,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \"Arab\",\n      \"upos\": \"ADJ\",\n      \"head\": 14,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"Moslem\",\n      \"upos\": \"ADJ\",\n      \"head\": 14,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"regime\",\n      \"upos\": \"NOUN\",\n      \"head\": 16,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \"is\",\n      \"upos\": \"AUX\",\n      \"head\": 16,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"massacring\",\n      \"upos\": \"VERB\",\n      \"head\": 8,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"its\",\n      \"upos\": \"PRON\",\n      \"head\": 20,\n      \"deprel\": \"nmod:poss\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \"black\",\n      \"upos\": \"ADJ\",\n      \"head\": 20,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \"Christian\",\n      \"upos\": \"ADJ\",\n      \"head\": 20,\n      \"deprel\": \"amod\"\n    },\n    {\n      \"id\": 20,\n      \"form\": \"citizens\",\n      \"upos\": \"NOUN\",\n      \"head\": 16,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 21,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 3,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 22,\n      \"form\": \"has\",\n      \"upos\": \"VERB\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 23,\n      \"form\": \"nothing\",\n      \"upos\": \"PRON\",\n      \"head\": 22,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 24,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 25,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 25,\n      \"form\": \"do\",\n      \"upos\": \"VERB\",\n      \"head\": 23,\n      \"deprel\": \"acl\"\n    },\n    {\n      \"id\": 26,\n      \"form\": \"with\",\n      \"upos\": \"ADP\",\n      \"head\": 27,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 27,\n      \"form\": \"Israel\",\n      \"upos\": \"PROPN\",\n      \"head\": 25,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 28,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 22,\n      \"deprel\": \"punct\"\n    }\n  ]\n}\n\nInput:\n# text = The fact that the US government and media are having a hissy fit over Venezuela wanting to buy guns, and then 200,000 of the guns Chavez wants to buy go missing on their way to Iraq is definitely sus.\n1\tThe\n2\tfact\n3\tthat\n4\tthe\n5\tUS\n6\tgovernment\n7\tand\n8\tmedia\n9\tare\n10\thaving\n11\ta\n12\thissy\n13\tfit\n14\tover\n15\tVenezuela\n16\twanting\n17\tto\n18\tbuy\n19\tguns\n20\t,\n21\tand\n22\tthen\n23\t200,000\n24\tof\n25\tthe\n26\tguns\n27\tChavez\n28\twants\n29\tto\n30\tbuy\n31\tgo\n32\tmissing\n33\ton\n34\ttheir\n35\tway\n36\tto\n37\tIraq\n38\tis\n39\tdefinitely\n40\tsus\n41\t.\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"The\",\n      \"upos\": \"DET\",\n      \"head\": 2,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"fact\",\n      \"upos\": \"NOUN\",\n      \"head\": 40,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"that\",\n      \"upos\": \"SCONJ\",\n      \"head\": 10,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 6,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"US\",\n      \"upos\": \"PROPN\",\n      \"head\": 6,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"government\",\n      \"upos\": \"NOUN\",\n      \"head\": 10,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 8,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"media\",\n      \"upos\": \"NOUN\",\n      \"head\": 6,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"are\",\n      \"upos\": \"AUX\",\n      \"head\": 10,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"having\",\n      \"upos\": \"VERB\",\n      \"head\": 2,\n      \"deprel\": \"acl\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \"a\",\n      \"upos\": \"DET\",\n      \"head\": 13,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \"hissy\",\n      \"upos\": \"NOUN\",\n      \"head\": 13,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"fit\",\n      \"upos\": \"NOUN\",\n      \"head\": 10,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"over\",\n      \"upos\": \"SCONJ\",\n      \"head\": 16,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \"Venezuela\",\n      \"upos\": \"PROPN\",\n      \"head\": 16,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"wanting\",\n      \"upos\": \"VERB\",\n      \"head\": 10,\n      \"deprel\": \"advcl\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 18,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \"buy\",\n      \"upos\": \"VERB\",\n      \"head\": 16,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \"guns\",\n      \"upos\": \"NOUN\",\n      \"head\": 18,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 20,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 31,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 21,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 31,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 22,\n      \"form\": \"then\",\n      \"upos\": \"ADV\",\n      \"head\": 31,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 23,\n      \"form\": \"200,000\",\n      \"upos\": \"NUM\",\n      \"head\": 31,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 24,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 26,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 25,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 26,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 26,\n      \"form\": \"guns\",\n      \"upos\": \"NOUN\",\n      \"head\": 23,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 27,\n      \"form\": \"Chavez\",\n      \"upos\": \"PROPN\",\n      \"head\": 28,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 28,\n      \"form\": \"wants\",\n      \"upos\": \"VERB\",\n      \"head\": 26,\n      \"deprel\": \"acl:relcl\"\n    },\n    {\n      \"id\": 29,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 30,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 30,\n      \"form\": \"buy\",\n      \"upos\": \"VERB\",\n      \"head\": 28,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 31,\n      \"form\": \"go\",\n      \"upos\": \"VERB\",\n      \"head\": 10,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 32,\n      \"form\": \"missing\",\n      \"upos\": \"ADJ\",\n      \"head\": 31,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 33,\n      \"form\": \"on\",\n      \"upos\": \"ADP\",\n      \"head\": 35,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 34,\n      \"form\": \"their\",\n      \"upos\": \"PRON\",\n      \"head\": 35,\n      \"deprel\": \"nmod:poss\"\n    },\n    {\n      \"id\": 35,\n      \"form\": \"way\",\n      \"upos\": \"NOUN\",\n      \"head\": 31,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 36,\n      \"form\": \"to\",\n      \"upos\": \"ADP\",\n      \"head\": 37,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 37,\n      \"form\": \"Iraq\",\n      \"upos\": \"PROPN\",\n      \"head\": 35,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 38,\n      \"form\": \"is\",\n      \"upos\": \"AUX\",\n      \"head\": 40,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 39,\n      \"form\": \"definitely\",\n      \"upos\": \"ADV\",\n      \"head\": 40,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 40,\n      \"form\": \"sus\",\n      \"upos\": \"ADJ\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 41,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 40,\n      \"deprel\": \"punct\"\n    }\n  ]\n}",
+      "user": "# text = Important news such as President Bush's miniscule calibrations on his marriage amendment/anti-gay (update: he's not against gays in the bedroom, just at the altar, where of course their relationships should not only be frowned upon but should be constitutionally excluded) has pushed Sudan not just off the front pages, or the A section, but out of the NY Times and Washington Post completely.\n1\tImportant\n2\tnews\n3\tsuch\n4\tas\n5\tPresident\n6\tBush\n7\t's\n8\tminiscule\n9\tcalibrations\n10\ton\n11\this\n12\tmarriage\n13\tamendment\n14\t/\n15\tanti-gay\n16\t(\n17\tupdate\n18\t:\n19\the\n20\t's\n21\tnot\n22\tagainst\n23\tgays\n24\tin\n25\tthe\n26\tbedroom\n27\t,\n28\tjust\n29\tat\n30\tthe\n31\taltar\n32\t,\n33\twhere\n34\tof\n35\tcourse\n36\ttheir\n37\trelationships\n38\tshould\n39\tnot\n40\tonly\n41\tbe\n42\tfrowned\n43\tupon\n44\tbut\n45\tshould\n46\tbe\n47\tconstitutionally\n48\texcluded\n49\t)\n50\thas\n51\tpushed\n52\tSudan\n53\tnot\n54\tjust\n55\toff\n56\tthe\n57\tfront\n58\tpages\n59\t,\n60\tor\n61\tthe\n62\tA\n63\tsection\n64\t,\n65\tbut\n66\tout\n67\tof\n68\tthe\n69\tNY\n70\tTimes\n71\tand\n72\tWashington\n73\tPost\n74\tcompletely\n75\t."
+    },
+    "syntax_parse": [
+      {
+        "id": 1,
+        "form": "Important",
+        "upos": "ADJ",
+        "head": 2,
+        "deprel": "amod"
+      },
+      {
+        "id": 2,
+        "form": "news",
+        "upos": "NOUN",
+        "head": 50,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 3,
+        "form": "such",
+        "upos": "ADV",
+        "head": 2,
+        "deprel": "advmod"
+      },
+      {
+        "id": 4,
+        "form": "as",
+        "upos": "ADP",
+        "head": 5,
+        "deprel": "case"
+      },
+      {
+        "id": 5,
+        "form": "President",
+        "upos": "NOUN",
+        "head": 6,
+        "deprel": "compound"
+      },
+      {
+        "id": 6,
+        "form": "Bush",
+        "upos": "PROPN",
+        "head": 7,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 7,
+        "form": "'s",
+        "upos": "PART",
+        "head": 9,
+        "deprel": "case"
+      },
+      {
+        "id": 8,
+        "form": "miniscule",
+        "upos": "ADJ",
+        "head": 9,
+        "deprel": "amod"
+      },
+      {
+        "id": 9,
+        "form": "calibrations",
+        "upos": "NOUN",
+        "head": 2,
+        "deprel": "appos"
+      },
+      {
+        "id": 10,
+        "form": "on",
+        "upos": "ADP",
+        "head": 12,
+        "deprel": "case"
+      },
+      {
+        "id": 11,
+        "form": "his",
+        "upos": "PRON",
+        "head": 12,
+        "deprel": "det"
+      },
+      {
+        "id": 12,
+        "form": "marriage",
+        "upos": "NOUN",
+        "head": 9,
+        "deprel": "obl"
+      },
+      {
+        "id": 13,
+        "form": "amendment",
+        "upos": "NOUN",
+        "head": 12,
+        "deprel": "compound"
+      },
+      {
+        "id": 14,
+        "form": "/",
+        "upos": "PUNCT",
+        "head": 13,
+        "deprel": "punct"
+      },
+      {
+        "id": 15,
+        "form": "anti-gay",
+        "upos": "ADJ",
+        "head": 13,
+        "deprel": "amod"
+      },
+      {
+        "id": 16,
+        "form": "(",
+        "upos": "PUNCT",
+        "head": 17,
+        "deprel": "punct"
+      },
+      {
+        "id": 17,
+        "form": "update",
+        "upos": "NOUN",
+        "head": 21,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 18,
+        "form": ":",
+        "upos": "PUNCT",
+        "head": 17,
+        "deprel": "punct"
+      },
+      {
+        "id": 19,
+        "form": "he",
+        "upos": "PRON",
+        "head": 21,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 20,
+        "form": "'s",
+        "upos": "AUX",
+        "head": 21,
+        "deprel": "cop"
+      },
+      {
+        "id": 21,
+        "form": "not",
+        "upos": "ADV",
+        "head": 20,
+        "deprel": "advmod"
+      },
+      {
+        "id": 22,
+        "form": "against",
+        "upos": "ADP",
+        "head": 23,
+        "deprel": "case"
+      },
+      {
+        "id": 23,
+        "form": "gays",
+        "upos": "NOUN",
+        "head": 20,
+        "deprel": "obl"
+      },
+      {
+        "id": 24,
+        "form": "in",
+        "upos": "ADP",
+        "head": 26,
+        "deprel": "case"
+      },
+      {
+        "id": 25,
+        "form": "the",
+        "upos": "DET",
+        "head": 26,
+        "deprel": "det"
+      },
+      {
+        "id": 26,
+        "form": "bedroom",
+        "upos": "NOUN",
+        "head": 20,
+        "deprel": "obl"
+      },
+      {
+        "id": 27,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 20,
+        "deprel": "punct"
+      },
+      {
+        "id": 28,
+        "form": "just",
+        "upos": "ADV",
+        "head": 30,
+        "deprel": "advmod"
+      },
+      {
+        "id": 29,
+        "form": "at",
+        "upos": "ADP",
+        "head": 31,
+        "deprel": "case"
+      },
+      {
+        "id": 30,
+        "form": "the",
+        "upos": "DET",
+        "head": 31,
+        "deprel": "det"
+      },
+      {
+        "id": 31,
+        "form": "altar",
+        "upos": "NOUN",
+        "head": 20,
+        "deprel": "obl"
+      },
+      {
+        "id": 32,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 20,
+        "deprel": "punct"
+      },
+      {
+        "id": 33,
+        "form": "where",
+        "upos": "ADV",
+        "head": 38,
+        "deprel": "advmod"
+      },
+      {
+        "id": 34,
+        "form": "of",
+        "upos": "ADP",
+        "head": 35,
+        "deprel": "case"
+      },
+      {
+        "id": 35,
+        "form": "course",
+        "upos": "NOUN",
+        "head": 33,
+        "deprel": "advmod"
+      },
+      {
+        "id": 36,
+        "form": "their",
+        "upos": "PRON",
+        "head": 37,
+        "deprel": "det"
+      },
+      {
+        "id": 37,
+        "form": "relationships",
+        "upos": "NOUN",
+        "head": 38,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 38,
+        "form": "should",
+        "upos": "AUX",
+        "head": 41,
+        "deprel": "aux"
+      },
+      {
+        "id": 39,
+        "form": "not",
+        "upos": "ADV",
+        "head": 41,
+        "deprel": "advmod"
+      },
+      {
+        "id": 40,
+        "form": "only",
+        "upos": "ADV",
+        "head": 41,
+        "deprel": "advmod"
+      },
+      {
+        "id": 41,
+        "form": "be",
+        "upos": "AUX",
+        "head": 45,
+        "deprel": "aux"
+      },
+      {
+        "id": 42,
+        "form": "frowned",
+        "upos": "VERB",
+        "head": 38,
+        "deprel": "xcomp"
+      },
+      {
+        "id": 43,
+        "form": "upon",
+        "upos": "ADP",
+        "head": 42,
+        "deprel": "case"
+      },
+      {
+        "id": 44,
+        "form": "but",
+        "upos": "CCONJ",
+        "head": 47,
+        "deprel": "cc"
+      },
+      {
+        "id": 45,
+        "form": "should",
+        "upos": "AUX",
+        "head": 47,
+        "deprel": "aux"
+      },
+      {
+        "id": 46,
+        "form": "be",
+        "upos": "AUX",
+        "head": 47,
+        "deprel": "aux"
+      },
+      {
+        "id": 47,
+        "form": "constitutionally",
+        "upos": "ADV",
+        "head": 48,
+        "deprel": "advmod"
+      },
+      {
+        "id": 48,
+        "form": "excluded",
+        "upos": "VERB",
+        "head": 42,
+        "deprel": "conj"
+      },
+      {
+        "id": 49,
+        "form": ")",
+        "upos": "PUNCT",
+        "head": 48,
+        "deprel": "punct"
+      },
+      {
+        "id": 50,
+        "form": "has",
+        "upos": "AUX",
+        "head": 51,
+        "deprel": "aux"
+      },
+      {
+        "id": 51,
+        "form": "pushed",
+        "upos": "VERB",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 52,
+        "form": "Sudan",
+        "upos": "PROPN",
+        "head": 51,
+        "deprel": "obj"
+      },
+      {
+        "id": 53,
+        "form": "not",
+        "upos": "ADV",
+        "head": 54,
+        "deprel": "advmod"
+      },
+      {
+        "id": 54,
+        "form": "just",
+        "upos": "ADV",
+        "head": 55,
+        "deprel": "advmod"
+      },
+      {
+        "id": 55,
+        "form": "off",
+        "upos": "ADP",
+        "head": 57,
+        "deprel": "case"
+      },
+      {
+        "id": 56,
+        "form": "the",
+        "upos": "DET",
+        "head": 57,
+        "deprel": "det"
+      },
+      {
+        "id": 57,
+        "form": "front",
+        "upos": "NOUN",
+        "head": 58,
+        "deprel": "compound"
+      },
+      {
+        "id": 58,
+        "form": "pages",
+        "upos": "NOUN",
+        "head": 51,
+        "deprel": "obl"
+      },
+      {
+        "id": 59,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      },
+      {
+        "id": 60,
+        "form": "or",
+        "upos": "CCONJ",
+        "head": 62,
+        "deprel": "cc"
+      },
+      {
+        "id": 61,
+        "form": "the",
+        "upos": "DET",
+        "head": 62,
+        "deprel": "det"
+      },
+      {
+        "id": 62,
+        "form": "A",
+        "upos": "PROPN",
+        "head": 63,
+        "deprel": "compound"
+      },
+      {
+        "id": 63,
+        "form": "section",
+        "upos": "NOUN",
+        "head": 58,
+        "deprel": "conj"
+      },
+      {
+        "id": 64,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      },
+      {
+        "id": 65,
+        "form": "but",
+        "upos": "CCONJ",
+        "head": 68,
+        "deprel": "cc"
+      },
+      {
+        "id": 66,
+        "form": "out",
+        "upos": "ADV",
+        "head": 51,
+        "deprel": "advmod"
+      },
+      {
+        "id": 67,
+        "form": "of",
+        "upos": "ADP",
+        "head": 70,
+        "deprel": "case"
+      },
+      {
+        "id": 68,
+        "form": "the",
+        "upos": "DET",
+        "head": 70,
+        "deprel": "det"
+      },
+      {
+        "id": 69,
+        "form": "NY",
+        "upos": "PROPN",
+        "head": 70,
+        "deprel": "compound"
+      },
+      {
+        "id": 70,
+        "form": "Times",
+        "upos": "PROPN",
+        "head": 66,
+        "deprel": "obl"
+      },
+      {
+        "id": 71,
+        "form": "and",
+        "upos": "CCONJ",
+        "head": 73,
+        "deprel": "cc"
+      },
+      {
+        "id": 72,
+        "form": "Washington",
+        "upos": "PROPN",
+        "head": 73,
+        "deprel": "compound"
+      },
+      {
+        "id": 73,
+        "form": "Post",
+        "upos": "PROPN",
+        "head": 66,
+        "deprel": "conj"
+      },
+      {
+        "id": 74,
+        "form": "completely",
+        "upos": "ADV",
+        "head": 51,
+        "deprel": "advmod"
+      },
+      {
+        "id": 75,
+        "form": ".",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      }
+    ],
+    "semantic_parse": [
+      {
+        "id": 1,
+        "form": "Important",
+        "upos": "ADJ",
+        "head": 2,
+        "deprel": "amod"
+      },
+      {
+        "id": 2,
+        "form": "news",
+        "upos": "NOUN",
+        "head": 51,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 3,
+        "form": "such",
+        "upos": "DET",
+        "head": 2,
+        "deprel": "det"
+      },
+      {
+        "id": 4,
+        "form": "as",
+        "upos": "SCONJ",
+        "head": 9,
+        "deprel": "mark"
+      },
+      {
+        "id": 5,
+        "form": "President",
+        "upos": "PROPN",
+        "head": 6,
+        "deprel": "compound"
+      },
+      {
+        "id": 6,
+        "form": "Bush",
+        "upos": "PROPN",
+        "head": 9,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 7,
+        "form": "'s",
+        "upos": "PART",
+        "head": 6,
+        "deprel": "case"
+      },
+      {
+        "id": 8,
+        "form": "miniscule",
+        "upos": "ADJ",
+        "head": 9,
+        "deprel": "amod"
+      },
+      {
+        "id": 9,
+        "form": "calibrations",
+        "upos": "NOUN",
+        "head": 2,
+        "deprel": "acl"
+      },
+      {
+        "id": 10,
+        "form": "on",
+        "upos": "ADP",
+        "head": 13,
+        "deprel": "case"
+      },
+      {
+        "id": 11,
+        "form": "his",
+        "upos": "PRON",
+        "head": 12,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 12,
+        "form": "marriage",
+        "upos": "NOUN",
+        "head": 13,
+        "deprel": "compound"
+      },
+      {
+        "id": 13,
+        "form": "amendment",
+        "upos": "NOUN",
+        "head": 9,
+        "deprel": "nmod"
+      },
+      {
+        "id": 14,
+        "form": "/",
+        "upos": "SYM",
+        "head": 15,
+        "deprel": "punct"
+      },
+      {
+        "id": 15,
+        "form": "anti-gay",
+        "upos": "ADJ",
+        "head": 13,
+        "deprel": "conj"
+      },
+      {
+        "id": 16,
+        "form": "(",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      },
+      {
+        "id": 17,
+        "form": "update",
+        "upos": "NOUN",
+        "head": 51,
+        "deprel": "dep"
+      },
+      {
+        "id": 18,
+        "form": ":",
+        "upos": "PUNCT",
+        "head": 17,
+        "deprel": "punct"
+      },
+      {
+        "id": 19,
+        "form": "he",
+        "upos": "PRON",
+        "head": 23,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 20,
+        "form": "'s",
+        "upos": "AUX",
+        "head": 23,
+        "deprel": "aux"
+      },
+      {
+        "id": 21,
+        "form": "not",
+        "upos": "ADV",
+        "head": 23,
+        "deprel": "advmod"
+      },
+      {
+        "id": 22,
+        "form": "against",
+        "upos": "ADP",
+        "head": 23,
+        "deprel": "case"
+      },
+      {
+        "id": 23,
+        "form": "gays",
+        "upos": "NOUN",
+        "head": 20,
+        "deprel": "obl"
+      },
+      {
+        "id": 24,
+        "form": "in",
+        "upos": "ADP",
+        "head": 26,
+        "deprel": "case"
+      },
+      {
+        "id": 25,
+        "form": "the",
+        "upos": "DET",
+        "head": 26,
+        "deprel": "det"
+      },
+      {
+        "id": 26,
+        "form": "bedroom",
+        "upos": "NOUN",
+        "head": 23,
+        "deprel": "obl"
+      },
+      {
+        "id": 27,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 23,
+        "deprel": "punct"
+      },
+      {
+        "id": 28,
+        "form": "just",
+        "upos": "ADV",
+        "head": 30,
+        "deprel": "advmod"
+      },
+      {
+        "id": 29,
+        "form": "at",
+        "upos": "ADP",
+        "head": 31,
+        "deprel": "case"
+      },
+      {
+        "id": 30,
+        "form": "the",
+        "upos": "DET",
+        "head": 31,
+        "deprel": "det"
+      },
+      {
+        "id": 31,
+        "form": "altar",
+        "upos": "NOUN",
+        "head": 23,
+        "deprel": "obl"
+      },
+      {
+        "id": 32,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 23,
+        "deprel": "punct"
+      },
+      {
+        "id": 33,
+        "form": "where",
+        "upos": "ADV",
+        "head": 38,
+        "deprel": "advmod"
+      },
+      {
+        "id": 34,
+        "form": "of",
+        "upos": "ADP",
+        "head": 35,
+        "deprel": "case"
+      },
+      {
+        "id": 35,
+        "form": "course",
+        "upos": "NOUN",
+        "head": 38,
+        "deprel": "nmod"
+      },
+      {
+        "id": 36,
+        "form": "their",
+        "upos": "PRON",
+        "head": 37,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 37,
+        "form": "relationships",
+        "upos": "NOUN",
+        "head": 38,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 38,
+        "form": "should",
+        "upos": "AUX",
+        "head": 42,
+        "deprel": "aux"
+      },
+      {
+        "id": 39,
+        "form": "not",
+        "upos": "ADV",
+        "head": 38,
+        "deprel": "advmod"
+      },
+      {
+        "id": 40,
+        "form": "only",
+        "upos": "ADV",
+        "head": 38,
+        "deprel": "advmod"
+      },
+      {
+        "id": 41,
+        "form": "be",
+        "upos": "AUX",
+        "head": 42,
+        "deprel": "aux:pass"
+      },
+      {
+        "id": 42,
+        "form": "frowned",
+        "upos": "VERB",
+        "head": 38,
+        "deprel": "xcomp"
+      },
+      {
+        "id": 43,
+        "form": "upon",
+        "upos": "ADP",
+        "head": 42,
+        "deprel": "case"
+      },
+      {
+        "id": 44,
+        "form": "but",
+        "upos": "CCONJ",
+        "head": 48,
+        "deprel": "cc"
+      },
+      {
+        "id": 45,
+        "form": "should",
+        "upos": "AUX",
+        "head": 48,
+        "deprel": "conj"
+      },
+      {
+        "id": 46,
+        "form": "be",
+        "upos": "AUX",
+        "head": 48,
+        "deprel": "aux"
+      },
+      {
+        "id": 47,
+        "form": "constitutionally",
+        "upos": "ADV",
+        "head": 48,
+        "deprel": "advmod"
+      },
+      {
+        "id": 48,
+        "form": "excluded",
+        "upos": "ADJ",
+        "head": 45,
+        "deprel": "xcomp"
+      },
+      {
+        "id": 49,
+        "form": ")",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      },
+      {
+        "id": 50,
+        "form": "has",
+        "upos": "AUX",
+        "head": 51,
+        "deprel": "aux"
+      },
+      {
+        "id": 51,
+        "form": "pushed",
+        "upos": "VERB",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 52,
+        "form": "Sudan",
+        "upos": "PROPN",
+        "head": 51,
+        "deprel": "obj"
+      },
+      {
+        "id": 53,
+        "form": "not",
+        "upos": "ADV",
+        "head": 55,
+        "deprel": "advmod"
+      },
+      {
+        "id": 54,
+        "form": "just",
+        "upos": "ADV",
+        "head": 55,
+        "deprel": "advmod"
+      },
+      {
+        "id": 55,
+        "form": "off",
+        "upos": "ADP",
+        "head": 58,
+        "deprel": "case"
+      },
+      {
+        "id": 56,
+        "form": "the",
+        "upos": "DET",
+        "head": 58,
+        "deprel": "det"
+      },
+      {
+        "id": 57,
+        "form": "front",
+        "upos": "ADJ",
+        "head": 58,
+        "deprel": "amod"
+      },
+      {
+        "id": 58,
+        "form": "pages",
+        "upos": "NOUN",
+        "head": 51,
+        "deprel": "obl"
+      },
+      {
+        "id": 59,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      },
+      {
+        "id": 60,
+        "form": "or",
+        "upos": "CCONJ",
+        "head": 63,
+        "deprel": "cc"
+      },
+      {
+        "id": 61,
+        "form": "the",
+        "upos": "DET",
+        "head": 63,
+        "deprel": "det"
+      },
+      {
+        "id": 62,
+        "form": "A",
+        "upos": "PROPN",
+        "head": 63,
+        "deprel": "compound"
+      },
+      {
+        "id": 63,
+        "form": "section",
+        "upos": "NOUN",
+        "head": 51,
+        "deprel": "conj"
+      },
+      {
+        "id": 64,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      },
+      {
+        "id": 65,
+        "form": "but",
+        "upos": "CCONJ",
+        "head": 70,
+        "deprel": "cc"
+      },
+      {
+        "id": 66,
+        "form": "out",
+        "upos": "ADP",
+        "head": 70,
+        "deprel": "case"
+      },
+      {
+        "id": 67,
+        "form": "of",
+        "upos": "ADP",
+        "head": 70,
+        "deprel": "case"
+      },
+      {
+        "id": 68,
+        "form": "the",
+        "upos": "DET",
+        "head": 70,
+        "deprel": "det"
+      },
+      {
+        "id": 69,
+        "form": "NY",
+        "upos": "PROPN",
+        "head": 70,
+        "deprel": "compound"
+      },
+      {
+        "id": 70,
+        "form": "Times",
+        "upos": "PROPN",
+        "head": 51,
+        "deprel": "obl"
+      },
+      {
+        "id": 71,
+        "form": "and",
+        "upos": "CCONJ",
+        "head": 73,
+        "deprel": "cc"
+      },
+      {
+        "id": 72,
+        "form": "Washington",
+        "upos": "PROPN",
+        "head": 73,
+        "deprel": "compound"
+      },
+      {
+        "id": 73,
+        "form": "Post",
+        "upos": "PROPN",
+        "head": 70,
+        "deprel": "conj"
+      },
+      {
+        "id": 74,
+        "form": "completely",
+        "upos": "ADV",
+        "head": 51,
+        "deprel": "advmod"
+      },
+      {
+        "id": 75,
+        "form": ".",
+        "upos": "PUNCT",
+        "head": 51,
+        "deprel": "punct"
+      }
+    ],
+    "token_differences": [
+      {
+        "id": 2,
+        "form": "news",
+        "gold": {
+          "head": 51,
+          "deprel": "nsubj"
+        },
+        "first": {
+          "head": 50,
+          "deprel": "nsubj"
+        },
+        "second": {
+          "head": 51,
+          "deprel": "nsubj"
+        }
+      },
+      {
+        "id": 3,
+        "form": "such",
+        "gold": {
+          "head": 9,
+          "deprel": "case"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "advmod"
+        },
+        "second": {
+          "head": 2,
+          "deprel": "det"
+        }
+      },
+      {
+        "id": 4,
+        "form": "as",
+        "gold": {
+          "head": 3,
+          "deprel": "fixed"
+        },
+        "first": {
+          "head": 5,
+          "deprel": "case"
+        },
+        "second": {
+          "head": 9,
+          "deprel": "mark"
+        }
+      },
+      {
+        "id": 5,
+        "form": "President",
+        "gold": {
+          "head": 6,
+          "deprel": "nmod:desc"
+        },
+        "first": {
+          "head": 6,
+          "deprel": "compound"
+        },
+        "second": {
+          "head": 6,
+          "deprel": "compound"
+        }
+      },
+      {
+        "id": 6,
+        "form": "Bush",
+        "gold": {
+          "head": 9,
+          "deprel": "nmod:poss"
+        },
+        "first": {
+          "head": 7,
+          "deprel": "nmod:poss"
+        },
+        "second": {
+          "head": 9,
+          "deprel": "nmod:poss"
+        }
+      },
+      {
+        "id": 7,
+        "form": "'s",
+        "gold": {
+          "head": 6,
+          "deprel": "case"
+        },
+        "first": {
+          "head": 9,
+          "deprel": "case"
+        },
+        "second": {
+          "head": 6,
+          "deprel": "case"
+        }
+      },
+      {
+        "id": 9,
+        "form": "calibrations",
+        "gold": {
+          "head": 2,
+          "deprel": "nmod"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "appos"
+        },
+        "second": {
+          "head": 2,
+          "deprel": "acl"
+        }
+      },
+      {
+        "id": 10,
+        "form": "on",
+        "gold": {
+          "head": 13,
+          "deprel": "case"
+        },
+        "first": {
+          "head": 12,
+          "deprel": "case"
+        },
+        "second": {
+          "head": 13,
+          "deprel": "case"
+        }
+      },
+      {
+        "id": 11,
+        "form": "his",
+        "gold": {
+          "head": 13,
+          "deprel": "nmod:poss"
+        },
+        "first": {
+          "head": 12,
+          "deprel": "det"
+        },
+        "second": {
+          "head": 12,
+          "deprel": "nmod:poss"
+        }
+      },
+      {
+        "id": 12,
+        "form": "marriage",
+        "gold": {
+          "head": 13,
+          "deprel": "compound"
+        },
+        "first": {
+          "head": 9,
+          "deprel": "obl"
+        },
+        "second": {
+          "head": 13,
+          "deprel": "compound"
+        }
+      },
+      {
+        "id": 13,
+        "form": "amendment",
+        "gold": {
+          "head": 9,
+          "deprel": "nmod"
+        },
+        "first": {
+          "head": 12,
+          "deprel": "compound"
+        },
+        "second": {
+          "head": 9,
+          "deprel": "nmod"
+        }
+      },
+      {
+        "id": 14,
+        "form": "/",
+        "gold": {
+          "head": 15,
+          "deprel": "cc"
+        },
+        "first": {
+          "head": 13,
+          "deprel": "punct"
+        },
+        "second": {
+          "head": 15,
+          "deprel": "punct"
+        }
+      }
+    ]
+  },
+  "syntax_failure": {
+    "model": "gpt_oss_120b",
+    "sent_id": "email-enronsent21_02-0033",
+    "text": "EY4096.7 PERFORMANCE 01-Feb-02 P -6,363,217 -$ 55,678",
+    "scored_tokens": 9,
+    "gold": [
+      {
+        "id": 1,
+        "form": "EY4096.7",
+        "lemma": "EY4096.7",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 2,
+        "form": "PERFORMANCE",
+        "lemma": "performance",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 3,
+        "form": "01-Feb-02",
+        "lemma": "01-Feb-02",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 4,
+        "form": "P",
+        "lemma": "P",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 5,
+        "form": "-",
+        "lemma": "-",
+        "upos": "SYM",
+        "xpos": "SYM",
+        "feats": "_",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 6,
+        "form": "6,363,217",
+        "lemma": "6363217",
+        "upos": "NUM",
+        "xpos": "CD",
+        "feats": "NumForm=Digit|NumType=Card",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 7,
+        "form": "-",
+        "lemma": "-",
+        "upos": "SYM",
+        "xpos": "SYM",
+        "feats": "_",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 8,
+        "form": "$",
+        "lemma": "$",
+        "upos": "SYM",
+        "xpos": "$",
+        "feats": "_",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 9,
+        "form": "55,678",
+        "lemma": "55678",
+        "upos": "NUM",
+        "xpos": "CD",
+        "feats": "NumForm=Digit|NumType=Card",
+        "head": 8,
+        "deprel": "nummod"
+      }
+    ],
+    "syntax_las_correct": 0,
+    "semantic_las_correct": 3,
+    "syntax_retrieved_sentences": [
+      "Day One Interviews Day Two Interviews",
+      "Chess history 1530-1647",
+      "7:00am - 5:00pm"
+    ],
+    "semantic_retrieved_sentences": [
+      "1689 - EPI-EBS Ventures, LLC",
+      "Had 33,000 miles, Ram 2500 3/4 ton, 4 x 4, 360 Magnum Motor.",
+      "Jan 9.95 Feb 6.25 Mar 4.98 April 5.37"
+    ],
+    "syntax_prompt": {
+      "system": "You are a Universal Dependencies (UD) syntactic parser for English.\nYou will be given an English sentence and a numbered list of its tokens\n(id and word form).\n\nYour task is to produce a UD parse in JSON with this exact structure:\n{\n  \"tokens\": [\n    {\n      \"id\":     <integer, matches the input token id>,\n      \"form\":   \"<copy the word form exactly from input>\",\n      \"upos\":   \"<Universal POS tag>\",\n      \"head\":   <integer, id of syntactic head; 0 means this token is root>,\n      \"deprel\": \"<UD dependency relation label>\"\n    },\n    ...\n  ]\n}\n\nRules:\n- Output ONLY the raw JSON object. No markdown, no explanation.\n- Exactly one token must have head=0 AND deprel=\"root\". No other token\n  may use head=0 or deprel=\"root\".\n- Use UD v2 UPOS tags: ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN,\n  NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X\n- Use standard UD v2 deprel labels: acl, advcl, advmod, amod, appos,\n  aux, case, cc, ccomp, compound, conj, cop, csubj, dep, det, discourse,\n  dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod,\n  nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root,\n  vocative, xcomp\n- Subtypes are allowed using colon notation (e.g. nsubj:pass, aux:pass,\n  acl:relcl, obl:agent). Use them where appropriate.\n- Copy id and form exactly as given; do not add or remove tokens.\nHere are some similar examples and their UD parses:\n\nInput:\n# text = Day One Interviews Day Two Interviews\n1\tDay\n2\tOne\n3\tInterviews\n4\tDay\n5\tTwo\n6\tInterviews\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"Day\",\n      \"upos\": \"NOUN\",\n      \"head\": 3,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"One\",\n      \"upos\": \"NUM\",\n      \"head\": 1,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"Interviews\",\n      \"upos\": \"NOUN\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"Day\",\n      \"upos\": \"NOUN\",\n      \"head\": 6,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"Two\",\n      \"upos\": \"NUM\",\n      \"head\": 4,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"Interviews\",\n      \"upos\": \"NOUN\",\n      \"head\": 3,\n      \"deprel\": \"conj\"\n    }\n  ]\n}\n\nInput:\n# text = Chess history 1530-1647\n1\tChess\n2\thistory\n3\t1530\n4\t-\n5\t1647\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"Chess\",\n      \"upos\": \"NOUN\",\n      \"head\": 2,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"history\",\n      \"upos\": \"NOUN\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"1530\",\n      \"upos\": \"NUM\",\n      \"head\": 2,\n      \"deprel\": \"nmod:unmarked\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"-\",\n      \"upos\": \"SYM\",\n      \"head\": 5,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"1647\",\n      \"upos\": \"NUM\",\n      \"head\": 3,\n      \"deprel\": \"nmod\"\n    }\n  ]\n}\n\nInput:\n# text = 7:00am - 5:00pm\n1\t7:00\n2\tam\n3\t-\n4\t5:00\n5\tpm\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"7:00\",\n      \"upos\": \"NUM\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"am\",\n      \"upos\": \"NOUN\",\n      \"head\": 1,\n      \"deprel\": \"nmod:unmarked\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"-\",\n      \"upos\": \"SYM\",\n      \"head\": 4,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"5:00\",\n      \"upos\": \"NUM\",\n      \"head\": 1,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"pm\",\n      \"upos\": \"NOUN\",\n      \"head\": 4,\n      \"deprel\": \"nmod:unmarked\"\n    }\n  ]\n}",
+      "user": "# text = EY4096.7 PERFORMANCE 01-Feb-02 P -6,363,217 -$ 55,678\n1\tEY4096.7\n2\tPERFORMANCE\n3\t01-Feb-02\n4\tP\n5\t-\n6\t6,363,217\n7\t-\n8\t$\n9\t55,678"
+    },
+    "semantic_prompt": {
+      "system": "You are a Universal Dependencies (UD) syntactic parser for English.\nYou will be given an English sentence and a numbered list of its tokens\n(id and word form).\n\nYour task is to produce a UD parse in JSON with this exact structure:\n{\n  \"tokens\": [\n    {\n      \"id\":     <integer, matches the input token id>,\n      \"form\":   \"<copy the word form exactly from input>\",\n      \"upos\":   \"<Universal POS tag>\",\n      \"head\":   <integer, id of syntactic head; 0 means this token is root>,\n      \"deprel\": \"<UD dependency relation label>\"\n    },\n    ...\n  ]\n}\n\nRules:\n- Output ONLY the raw JSON object. No markdown, no explanation.\n- Exactly one token must have head=0 AND deprel=\"root\". No other token\n  may use head=0 or deprel=\"root\".\n- Use UD v2 UPOS tags: ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN,\n  NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X\n- Use standard UD v2 deprel labels: acl, advcl, advmod, amod, appos,\n  aux, case, cc, ccomp, compound, conj, cop, csubj, dep, det, discourse,\n  dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod,\n  nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root,\n  vocative, xcomp\n- Subtypes are allowed using colon notation (e.g. nsubj:pass, aux:pass,\n  acl:relcl, obl:agent). Use them where appropriate.\n- Copy id and form exactly as given; do not add or remove tokens.\nHere are some similar examples and their UD parses:\n\nInput:\n# text = 1689 - EPI-EBS Ventures, LLC\n1\t1689\n2\t-\n3\tEPI\n4\t-\n5\tEBS\n6\tVentures\n7\t,\n8\tLLC\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"1689\",\n      \"upos\": \"NUM\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"-\",\n      \"upos\": \"PUNCT\",\n      \"head\": 6,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"EPI\",\n      \"upos\": \"PROPN\",\n      \"head\": 5,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"-\",\n      \"upos\": \"PUNCT\",\n      \"head\": 3,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"EBS\",\n      \"upos\": \"PROPN\",\n      \"head\": 6,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"Ventures\",\n      \"upos\": \"PROPN\",\n      \"head\": 1,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 6,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"LLC\",\n      \"upos\": \"PROPN\",\n      \"head\": 6,\n      \"deprel\": \"nmod:desc\"\n    }\n  ]\n}\n\nInput:\n# text = Had 33,000 miles, Ram 2500 3/4 ton, 4 x 4, 360 Magnum Motor.\n1\tHad\n2\t33,000\n3\tmiles\n4\t,\n5\tRam\n6\t2500\n7\t3\n8\t/\n9\t4\n10\tton\n11\t,\n12\t4\n13\tx\n14\t4\n15\t,\n16\t360\n17\tMagnum\n18\tMotor\n19\t.\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"Had\",\n      \"upos\": \"VERB\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"33,000\",\n      \"upos\": \"NUM\",\n      \"head\": 3,\n      \"deprel\": \"nummod\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"miles\",\n      \"upos\": \"NOUN\",\n      \"head\": 1,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 5,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"Ram\",\n      \"upos\": \"PROPN\",\n      \"head\": 1,\n      \"deprel\": \"parataxis\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"2500\",\n      \"upos\": \"NUM\",\n      \"head\": 5,\n      \"deprel\": \"flat\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"3\",\n      \"upos\": \"NUM\",\n      \"head\": 9,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"/\",\n      \"upos\": \"PUNCT\",\n      \"head\": 7,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"4\",\n      \"upos\": \"NUM\",\n      \"head\": 10,\n      \"deprel\": \"nummod\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"ton\",\n      \"upos\": \"NOUN\",\n      \"head\": 5,\n      \"deprel\": \"list\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 12,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \"4\",\n      \"upos\": \"NUM\",\n      \"head\": 5,\n      \"deprel\": \"list\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"x\",\n      \"upos\": \"SYM\",\n      \"head\": 14,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"4\",\n      \"upos\": \"NUM\",\n      \"head\": 12,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 18,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"360\",\n      \"upos\": \"NUM\",\n      \"head\": 18,\n      \"deprel\": \"nummod\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"Magnum\",\n      \"upos\": \"PROPN\",\n      \"head\": 18,\n      \"deprel\": \"compound\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \"Motor\",\n      \"upos\": \"NOUN\",\n      \"head\": 5,\n      \"deprel\": \"list\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 5,\n      \"deprel\": \"punct\"\n    }\n  ]\n}\n\nInput:\n# text = Jan 9.95 Feb 6.25 Mar 4.98 April 5.37\n1\tJan\n2\t9.95\n3\tFeb\n4\t6.25\n5\tMar\n6\t4.98\n7\tApril\n8\t5.37\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"Jan\",\n      \"upos\": \"PROPN\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"9.95\",\n      \"upos\": \"NUM\",\n      \"head\": 1,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"Feb\",\n      \"upos\": \"PROPN\",\n      \"head\": 1,\n      \"deprel\": \"list\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"6.25\",\n      \"upos\": \"NUM\",\n      \"head\": 3,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"Mar\",\n      \"upos\": \"PROPN\",\n      \"head\": 1,\n      \"deprel\": \"list\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"4.98\",\n      \"upos\": \"NUM\",\n      \"head\": 5,\n      \"deprel\": \"appos\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"April\",\n      \"upos\": \"PROPN\",\n      \"head\": 1,\n      \"deprel\": \"list\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"5.37\",\n      \"upos\": \"NUM\",\n      \"head\": 7,\n      \"deprel\": \"appos\"\n    }\n  ]\n}",
+      "user": "# text = EY4096.7 PERFORMANCE 01-Feb-02 P -6,363,217 -$ 55,678\n1\tEY4096.7\n2\tPERFORMANCE\n3\t01-Feb-02\n4\tP\n5\t-\n6\t6,363,217\n7\t-\n8\t$\n9\t55,678"
+    },
+    "syntax_parse": [
+      {
+        "id": 1,
+        "form": "EY4096.7",
+        "upos": "PROPN",
+        "head": 2,
+        "deprel": "compound"
+      },
+      {
+        "id": 2,
+        "form": "PERFORMANCE",
+        "upos": "NOUN",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 3,
+        "form": "01-Feb-02",
+        "upos": "NUM",
+        "head": 2,
+        "deprel": "nmod:unmarked"
+      },
+      {
+        "id": 4,
+        "form": "P",
+        "upos": "NOUN",
+        "head": 2,
+        "deprel": "nmod:unmarked"
+      },
+      {
+        "id": 5,
+        "form": "-",
+        "upos": "PUNCT",
+        "head": 6,
+        "deprel": "punct"
+      },
+      {
+        "id": 6,
+        "form": "6,363,217",
+        "upos": "NUM",
+        "head": 2,
+        "deprel": "nmod"
+      },
+      {
+        "id": 7,
+        "form": "-",
+        "upos": "PUNCT",
+        "head": 9,
+        "deprel": "punct"
+      },
+      {
+        "id": 8,
+        "form": "$",
+        "upos": "SYM",
+        "head": 9,
+        "deprel": "case"
+      },
+      {
+        "id": 9,
+        "form": "55,678",
+        "upos": "NUM",
+        "head": 2,
+        "deprel": "nmod"
+      }
+    ],
+    "semantic_parse": [
+      {
+        "id": 1,
+        "form": "EY4096.7",
+        "upos": "PROPN",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 2,
+        "form": "PERFORMANCE",
+        "upos": "NOUN",
+        "head": 1,
+        "deprel": "appos"
+      },
+      {
+        "id": 3,
+        "form": "01-Feb-02",
+        "upos": "PROPN",
+        "head": 1,
+        "deprel": "appos"
+      },
+      {
+        "id": 4,
+        "form": "P",
+        "upos": "PROPN",
+        "head": 1,
+        "deprel": "list"
+      },
+      {
+        "id": 5,
+        "form": "-",
+        "upos": "PUNCT",
+        "head": 4,
+        "deprel": "punct"
+      },
+      {
+        "id": 6,
+        "form": "6,363,217",
+        "upos": "NUM",
+        "head": 4,
+        "deprel": "nummod"
+      },
+      {
+        "id": 7,
+        "form": "-",
+        "upos": "PUNCT",
+        "head": 6,
+        "deprel": "punct"
+      },
+      {
+        "id": 8,
+        "form": "$",
+        "upos": "SYM",
+        "head": 6,
+        "deprel": "nmod"
+      },
+      {
+        "id": 9,
+        "form": "55,678",
+        "upos": "NUM",
+        "head": 8,
+        "deprel": "nummod"
+      }
+    ],
+    "token_differences": [
+      {
+        "id": 1,
+        "form": "EY4096.7",
+        "gold": {
+          "head": 0,
+          "deprel": "root"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "compound"
+        },
+        "second": {
+          "head": 0,
+          "deprel": "root"
+        }
+      },
+      {
+        "id": 2,
+        "form": "PERFORMANCE",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 0,
+          "deprel": "root"
+        },
+        "second": {
+          "head": 1,
+          "deprel": "appos"
+        }
+      },
+      {
+        "id": 3,
+        "form": "01-Feb-02",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "nmod:unmarked"
+        },
+        "second": {
+          "head": 1,
+          "deprel": "appos"
+        }
+      },
+      {
+        "id": 4,
+        "form": "P",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "nmod:unmarked"
+        },
+        "second": {
+          "head": 1,
+          "deprel": "list"
+        }
+      },
+      {
+        "id": 5,
+        "form": "-",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 6,
+          "deprel": "punct"
+        },
+        "second": {
+          "head": 4,
+          "deprel": "punct"
+        }
+      },
+      {
+        "id": 6,
+        "form": "6,363,217",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "nmod"
+        },
+        "second": {
+          "head": 4,
+          "deprel": "nummod"
+        }
+      },
+      {
+        "id": 7,
+        "form": "-",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 9,
+          "deprel": "punct"
+        },
+        "second": {
+          "head": 6,
+          "deprel": "punct"
+        }
+      },
+      {
+        "id": 8,
+        "form": "$",
+        "gold": {
+          "head": 1,
+          "deprel": "list"
+        },
+        "first": {
+          "head": 9,
+          "deprel": "case"
+        },
+        "second": {
+          "head": 6,
+          "deprel": "nmod"
+        }
+      },
+      {
+        "id": 9,
+        "form": "55,678",
+        "gold": {
+          "head": 8,
+          "deprel": "nummod"
+        },
+        "first": {
+          "head": 2,
+          "deprel": "nmod"
+        },
+        "second": {
+          "head": 8,
+          "deprel": "nummod"
+        }
+      }
+    ]
+  },
+  "critique_regression": {
+    "model": "gpt_oss_120b",
+    "sent_id": "newsgroup-groups.google.com_n3td3v_e874a1e5eb995654_ENG_20060120_052200-0010",
+    "text": "The BBC is not responsible for the content of this e-mail, and anything written in this e-mail does not necessarily reflect the BBC's views or opinions.",
+    "scored_tokens": 27,
+    "gold": [
+      {
+        "id": 1,
+        "form": "The",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 2,
+        "deprel": "det"
+      },
+      {
+        "id": 2,
+        "form": "BBC",
+        "lemma": "BBC",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 5,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 3,
+        "form": "is",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 5,
+        "deprel": "cop"
+      },
+      {
+        "id": 4,
+        "form": "not",
+        "lemma": "not",
+        "upos": "PART",
+        "xpos": "RB",
+        "feats": "Polarity=Neg",
+        "head": 5,
+        "deprel": "advmod"
+      },
+      {
+        "id": 5,
+        "form": "responsible",
+        "lemma": "responsible",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 6,
+        "form": "for",
+        "lemma": "for",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 8,
+        "deprel": "case"
+      },
+      {
+        "id": 7,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 8,
+        "deprel": "det"
+      },
+      {
+        "id": 8,
+        "form": "content",
+        "lemma": "content",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 5,
+        "deprel": "obl"
+      },
+      {
+        "id": 9,
+        "form": "of",
+        "lemma": "of",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 11,
+        "deprel": "case"
+      },
+      {
+        "id": 10,
+        "form": "this",
+        "lemma": "this",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Number=Sing|PronType=Dem",
+        "head": 11,
+        "deprel": "det"
+      },
+      {
+        "id": 11,
+        "form": "e-mail",
+        "lemma": "e-mail",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 8,
+        "deprel": "nmod"
+      },
+      {
+        "id": 12,
+        "form": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "feats": "_",
+        "head": 22,
+        "deprel": "punct"
+      },
+      {
+        "id": 13,
+        "form": "and",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "feats": "_",
+        "head": 22,
+        "deprel": "cc"
+      },
+      {
+        "id": 14,
+        "form": "anything",
+        "lemma": "anything",
+        "upos": "PRON",
+        "xpos": "NN",
+        "feats": "Number=Sing|PronType=Ind",
+        "head": 22,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 15,
+        "form": "written",
+        "lemma": "write",
+        "upos": "VERB",
+        "xpos": "VBN",
+        "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+        "head": 14,
+        "deprel": "acl"
+      },
+      {
+        "id": 16,
+        "form": "in",
+        "lemma": "in",
+        "upos": "ADP",
+        "xpos": "IN",
+        "feats": "_",
+        "head": 18,
+        "deprel": "case"
+      },
+      {
+        "id": 17,
+        "form": "this",
+        "lemma": "this",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Number=Sing|PronType=Dem",
+        "head": 18,
+        "deprel": "det"
+      },
+      {
+        "id": 18,
+        "form": "e-mail",
+        "lemma": "e-mail",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 15,
+        "deprel": "obl"
+      },
+      {
+        "id": 19,
+        "form": "does",
+        "lemma": "do",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 22,
+        "deprel": "aux"
+      },
+      {
+        "id": 20,
+        "form": "not",
+        "lemma": "not",
+        "upos": "PART",
+        "xpos": "RB",
+        "feats": "Polarity=Neg",
+        "head": 22,
+        "deprel": "advmod"
+      },
+      {
+        "id": 21,
+        "form": "necessarily",
+        "lemma": "necessarily",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "_",
+        "head": 22,
+        "deprel": "advmod"
+      },
+      {
+        "id": 22,
+        "form": "reflect",
+        "lemma": "reflect",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 5,
+        "deprel": "conj"
+      },
+      {
+        "id": 23,
+        "form": "the",
+        "lemma": "the",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Def|PronType=Art",
+        "head": 24,
+        "deprel": "det"
+      },
+      {
+        "id": 24,
+        "form": "BBC",
+        "lemma": "BBC",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 26,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 25,
+        "form": "'s",
+        "lemma": "'s",
+        "upos": "PART",
+        "xpos": "POS",
+        "feats": "_",
+        "head": 24,
+        "deprel": "case"
+      },
+      {
+        "id": 26,
+        "form": "views",
+        "lemma": "view",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 22,
+        "deprel": "obj"
+      },
+      {
+        "id": 27,
+        "form": "or",
+        "lemma": "or",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "feats": "_",
+        "head": 28,
+        "deprel": "cc"
+      },
+      {
+        "id": 28,
+        "form": "opinions",
+        "lemma": "opinion",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 26,
+        "deprel": "conj"
+      },
+      {
+        "id": 29,
+        "form": ".",
+        "lemma": ".",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "feats": "_",
+        "head": 5,
+        "deprel": "punct"
+      }
+    ],
+    "cot_prompt": {
+      "system": "You are a Universal Dependencies (UD) syntactic parser for English.\nYou will be given an English sentence and a numbered list of its tokens\n(id and word form).\n\nYour task is to produce a UD parse in JSON with this exact structure:\n{\n  \"tokens\": [\n    {\n      \"id\":     <integer, matches the input token id>,\n      \"form\":   \"<copy the word form exactly from input>\",\n      \"upos\":   \"<Universal POS tag>\",\n      \"head\":   <integer, id of syntactic head; 0 means this token is root>,\n      \"deprel\": \"<UD dependency relation label>\"\n    },\n    ...\n  ]\n}\n\nRules:\n- Output ONLY the reasoning steps followed by the raw JSON object.\n  No markdown, no explanation outside the reasoning steps.\n- Exactly one token must have head=0 AND deprel=\"root\". No other token\n  may use head=0 or deprel=\"root\".\n- Use UD v2 UPOS tags: ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN,\n  NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X\n- Use standard UD v2 deprel labels: acl, advcl, advmod, amod, appos,\n  aux, case, cc, ccomp, compound, conj, cop, csubj, dep, det, discourse,\n  dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod,\n  nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root,\n  vocative, xcomp\n- Subtypes are allowed using colon notation (e.g. nsubj:pass, aux:pass,\n  acl:relcl, obl:agent). Use them where appropriate.\n- Copy id and form exactly as given; do not add or remove tokens.\n- Before producing the JSON, reason through the syntactic structure\n  step by step as shown in the example below.\n\nHere is an example:\n\nInput:\n# text = My sister and I would like to go to Ireland.\n1\tMy\n2\tsister\n3\tand\n4\tI\n5\twould\n6\tlike\n7\tto\n8\tgo\n9\tto\n10\tIreland\n11\t.\n\nReasoning:\nStep 1 – Identify the root (main predicate).\nThe sentence is \"My sister and I would like to go to Ireland.\"\nThe finite verbal core is \"would like\". \"like\" is the main lexical verb\ninflected for tense/mood via the modal \"would\", so \"like\" (id=6) is the ROOT.\n→ id=6: upos=VERB, head=0, deprel=root\n\nStep 2 – Attach the modal auxiliary.\n\"would\" (id=5) is a modal auxiliary helping \"like\".\n→ id=5: upos=AUX, head=6, deprel=aux\n\nStep 3 – Identify the subject.\nThe subject of \"like\" is a coordinated NP: \"My sister and I\".\nThe syntactic head of a coordination is the first conjunct, so \"sister\" (id=2)\nis the head of the NP and attaches to \"like\" as nsubj.\n→ id=2: upos=NOUN, head=6, deprel=nsubj\n\nStep 4 – Possessive modifier of \"sister\".\n\"My\" (id=1) is a possessive pronoun modifying \"sister\".\nIn UD this is nmod:poss (nominal modifier, possessive subtype).\n→ id=1: upos=PRON, head=2, deprel=nmod:poss\n\nStep 5 – Coordination inside the subject NP.\n\"and\" (id=3) is a coordinating conjunction. In UD, cc attaches to the\nfollowing conjunct it introduces, which is \"I\" (id=4).\n→ id=3: upos=CCONJ, head=4, deprel=cc\n\n\"I\" (id=4) is the second conjunct coordinated with \"sister\" (id=2),\nso it attaches to \"sister\" as conj.\n→ id=4: upos=PRON, head=2, deprel=conj\n\nStep 6 – The xcomp infinitival complement.\n\"like\" takes an open clausal complement (xcomp): \"to go\".\n\"go\" (id=8) is the head of this infinitival clause and attaches to \"like\"\nas xcomp (the subject is controlled by the matrix subject, hence xcomp not ccomp).\n→ id=8: upos=VERB, head=6, deprel=xcomp\n\nStep 7 – The infinitival marker \"to\".\n\"to\" (id=7) before \"go\" is the infinitive particle (PART), marking the\nsubordinate verb.\n→ id=7: upos=PART, head=8, deprel=mark\n\nStep 8 – Oblique argument of \"go\".\n\"to Ireland\" is a prepositional phrase expressing destination, functioning\nas an oblique argument of \"go\".\n\"Ireland\" (id=10) is the head of this PP; it is a proper noun.\n→ id=10: upos=PROPN, head=8, deprel=obl\n\n\"to\" (id=9) is a preposition (adposition) introducing \"Ireland\", so it\nattaches to \"Ireland\" as case.\n→ id=9: upos=ADP, head=10, deprel=case\n\nStep 9 – Punctuation.\nThe period (id=11) is sentence-final punctuation. In UD, punct always\nattaches to the root of the sentence.\n→ id=11: upos=PUNCT, head=6, deprel=punct\n\nOutput:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"My\",\n      \"upos\": \"PRON\",\n      \"head\": 2,\n      \"deprel\": \"nmod:poss\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"sister\",\n      \"upos\": \"NOUN\",\n      \"head\": 6,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 4,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"I\",\n      \"upos\": \"PRON\",\n      \"head\": 2,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"would\",\n      \"upos\": \"AUX\",\n      \"head\": 6,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"like\",\n      \"upos\": \"VERB\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"to\",\n      \"upos\": \"PART\",\n      \"head\": 8,\n      \"deprel\": \"mark\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"go\",\n      \"upos\": \"VERB\",\n      \"head\": 6,\n      \"deprel\": \"xcomp\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"to\",\n      \"upos\": \"ADP\",\n      \"head\": 10,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"Ireland\",\n      \"upos\": \"PROPN\",\n      \"head\": 8,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 6,\n      \"deprel\": \"punct\"\n    }\n  ]\n}",
+      "user": "# text = The BBC is not responsible for the content of this e-mail, and anything written in this e-mail does not necessarily reflect the BBC's views or opinions.\n1\tThe\n2\tBBC\n3\tis\n4\tnot\n5\tresponsible\n6\tfor\n7\tthe\n8\tcontent\n9\tof\n10\tthis\n11\te-mail\n12\t,\n13\tand\n14\tanything\n15\twritten\n16\tin\n17\tthis\n18\te-mail\n19\tdoes\n20\tnot\n21\tnecessarily\n22\treflect\n23\tthe\n24\tBBC\n25\t's\n26\tviews\n27\tor\n28\topinions\n29\t."
+    },
+    "critique_prompt": {
+      "system": "You are an expert in Universal Dependencies (UD) syntactic parsing for English.\n\nBelow is an English sentence and its dependency parse generated by a language model.\nYour task is to:\n  1. Critically review the parse and identify any errors in:\n       - Part-of-speech tags (upos): Are the Universal POS tags correctly assigned?\n       - Dependency relations (deprel): Are the grammatical relations correctly labeled?\n       - Dependency heads (head): Is each token correctly attached to its head?\n       - Root identification: Exactly one token must have head=0 and deprel=\"root\".\n         No other token may use head=0 or deprel=\"root\".\n  2. Produce a corrected parse based on your review.\n     If you find no errors, reproduce the original parse unchanged.\n\nRules:\n- Output ONLY the raw JSON object. No markdown, no explanation.\n- The output must follow this exact structure:\n  {\n    \"tokens\": [\n      {\n        \"id\":     <integer, matches the input token id>,\n        \"form\":   \"<copy the word form exactly from input>\",\n        \"upos\":   \"<Universal POS tag>\",\n        \"head\":   <integer, id of syntactic head; 0 means this token is root>,\n        \"deprel\": \"<UD dependency relation label>\"\n      },\n      ...\n    ]\n  }\n- Exactly one token must have head=0 AND deprel=\"root\". No other token\n  may use head=0 or deprel=\"root\".\n- Use UD v2 UPOS tags: ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN,\n  NUM, PART, PRON, PROPN, PUNCT, SCONJ, SYM, VERB, X\n- Use standard UD v2 deprel labels: acl, advcl, advmod, amod, appos,\n  aux, case, cc, ccomp, compound, conj, cop, csubj, dep, discourse,\n  dislocated, expl, fixed, flat, goeswith, iobj, list, mark, nmod,\n  nsubj, nummod, obj, obl, orphan, parataxis, punct, reparandum, root,\n  vocative, xcomp\n- Subtypes are allowed using colon notation (e.g. nsubj:pass, aux:pass,\n  acl:relcl, obl:agent). Use them where appropriate.\n- Copy id and form exactly as given; do not add or remove tokens.",
+      "user": "Sentence: The BBC is not responsible for the content of this e-mail, and anything written in this e-mail does not necessarily reflect the BBC's views or opinions.\n\nTokens:\n1\tThe\n2\tBBC\n3\tis\n4\tnot\n5\tresponsible\n6\tfor\n7\tthe\n8\tcontent\n9\tof\n10\tthis\n11\te-mail\n12\t,\n13\tand\n14\tanything\n15\twritten\n16\tin\n17\tthis\n18\te-mail\n19\tdoes\n20\tnot\n21\tnecessarily\n22\treflect\n23\tthe\n24\tBBC\n25\t's\n26\tviews\n27\tor\n28\topinions\n29\t.\n\nExisting parse:\n{\n  \"tokens\": [\n    {\n      \"id\": 1,\n      \"form\": \"The\",\n      \"upos\": \"DET\",\n      \"head\": 2,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 2,\n      \"form\": \"BBC\",\n      \"upos\": \"PROPN\",\n      \"head\": 5,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 3,\n      \"form\": \"is\",\n      \"upos\": \"AUX\",\n      \"head\": 5,\n      \"deprel\": \"cop\"\n    },\n    {\n      \"id\": 4,\n      \"form\": \"not\",\n      \"upos\": \"ADV\",\n      \"head\": 5,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 5,\n      \"form\": \"responsible\",\n      \"upos\": \"ADJ\",\n      \"head\": 0,\n      \"deprel\": \"root\"\n    },\n    {\n      \"id\": 6,\n      \"form\": \"for\",\n      \"upos\": \"ADP\",\n      \"head\": 8,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 7,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 8,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 8,\n      \"form\": \"content\",\n      \"upos\": \"NOUN\",\n      \"head\": 5,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 9,\n      \"form\": \"of\",\n      \"upos\": \"ADP\",\n      \"head\": 11,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 10,\n      \"form\": \"this\",\n      \"upos\": \"DET\",\n      \"head\": 11,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 11,\n      \"form\": \"e-mail\",\n      \"upos\": \"NOUN\",\n      \"head\": 8,\n      \"deprel\": \"nmod\"\n    },\n    {\n      \"id\": 12,\n      \"form\": \",\",\n      \"upos\": \"PUNCT\",\n      \"head\": 5,\n      \"deprel\": \"punct\"\n    },\n    {\n      \"id\": 13,\n      \"form\": \"and\",\n      \"upos\": \"CCONJ\",\n      \"head\": 19,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 14,\n      \"form\": \"anything\",\n      \"upos\": \"PRON\",\n      \"head\": 22,\n      \"deprel\": \"nsubj\"\n    },\n    {\n      \"id\": 15,\n      \"form\": \"written\",\n      \"upos\": \"VERB\",\n      \"head\": 14,\n      \"deprel\": \"acl\"\n    },\n    {\n      \"id\": 16,\n      \"form\": \"in\",\n      \"upos\": \"ADP\",\n      \"head\": 18,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 17,\n      \"form\": \"this\",\n      \"upos\": \"DET\",\n      \"head\": 18,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 18,\n      \"form\": \"e-mail\",\n      \"upos\": \"NOUN\",\n      \"head\": 15,\n      \"deprel\": \"obl\"\n    },\n    {\n      \"id\": 19,\n      \"form\": \"does\",\n      \"upos\": \"AUX\",\n      \"head\": 22,\n      \"deprel\": \"aux\"\n    },\n    {\n      \"id\": 20,\n      \"form\": \"not\",\n      \"upos\": \"ADV\",\n      \"head\": 22,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 21,\n      \"form\": \"necessarily\",\n      \"upos\": \"ADV\",\n      \"head\": 22,\n      \"deprel\": \"advmod\"\n    },\n    {\n      \"id\": 22,\n      \"form\": \"reflect\",\n      \"upos\": \"VERB\",\n      \"head\": 5,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 23,\n      \"form\": \"the\",\n      \"upos\": \"DET\",\n      \"head\": 26,\n      \"deprel\": \"det\"\n    },\n    {\n      \"id\": 24,\n      \"form\": \"BBC\",\n      \"upos\": \"PROPN\",\n      \"head\": 26,\n      \"deprel\": \"nmod:poss\"\n    },\n    {\n      \"id\": 25,\n      \"form\": \"'s\",\n      \"upos\": \"PART\",\n      \"head\": 24,\n      \"deprel\": \"case\"\n    },\n    {\n      \"id\": 26,\n      \"form\": \"views\",\n      \"upos\": \"NOUN\",\n      \"head\": 22,\n      \"deprel\": \"obj\"\n    },\n    {\n      \"id\": 27,\n      \"form\": \"or\",\n      \"upos\": \"CCONJ\",\n      \"head\": 28,\n      \"deprel\": \"cc\"\n    },\n    {\n      \"id\": 28,\n      \"form\": \"opinions\",\n      \"upos\": \"NOUN\",\n      \"head\": 26,\n      \"deprel\": \"conj\"\n    },\n    {\n      \"id\": 29,\n      \"form\": \".\",\n      \"upos\": \"PUNCT\",\n      \"head\": 5,\n      \"deprel\": \"punct\"\n    }\n  ]\n}"
+    },
+    "cot_parse": [
+      {
+        "id": 1,
+        "form": "The",
+        "upos": "DET",
+        "head": 2,
+        "deprel": "det"
+      },
+      {
+        "id": 2,
+        "form": "BBC",
+        "upos": "PROPN",
+        "head": 5,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 3,
+        "form": "is",
+        "upos": "AUX",
+        "head": 5,
+        "deprel": "cop"
+      },
+      {
+        "id": 4,
+        "form": "not",
+        "upos": "ADV",
+        "head": 5,
+        "deprel": "advmod"
+      },
+      {
+        "id": 5,
+        "form": "responsible",
+        "upos": "ADJ",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 6,
+        "form": "for",
+        "upos": "ADP",
+        "head": 8,
+        "deprel": "case"
+      },
+      {
+        "id": 7,
+        "form": "the",
+        "upos": "DET",
+        "head": 8,
+        "deprel": "det"
+      },
+      {
+        "id": 8,
+        "form": "content",
+        "upos": "NOUN",
+        "head": 5,
+        "deprel": "obl"
+      },
+      {
+        "id": 9,
+        "form": "of",
+        "upos": "ADP",
+        "head": 11,
+        "deprel": "case"
+      },
+      {
+        "id": 10,
+        "form": "this",
+        "upos": "DET",
+        "head": 11,
+        "deprel": "det"
+      },
+      {
+        "id": 11,
+        "form": "e-mail",
+        "upos": "NOUN",
+        "head": 8,
+        "deprel": "nmod"
+      },
+      {
+        "id": 12,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 5,
+        "deprel": "punct"
+      },
+      {
+        "id": 13,
+        "form": "and",
+        "upos": "CCONJ",
+        "head": 19,
+        "deprel": "cc"
+      },
+      {
+        "id": 14,
+        "form": "anything",
+        "upos": "PRON",
+        "head": 22,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 15,
+        "form": "written",
+        "upos": "VERB",
+        "head": 14,
+        "deprel": "acl"
+      },
+      {
+        "id": 16,
+        "form": "in",
+        "upos": "ADP",
+        "head": 18,
+        "deprel": "case"
+      },
+      {
+        "id": 17,
+        "form": "this",
+        "upos": "DET",
+        "head": 18,
+        "deprel": "det"
+      },
+      {
+        "id": 18,
+        "form": "e-mail",
+        "upos": "NOUN",
+        "head": 15,
+        "deprel": "obl"
+      },
+      {
+        "id": 19,
+        "form": "does",
+        "upos": "AUX",
+        "head": 22,
+        "deprel": "aux"
+      },
+      {
+        "id": 20,
+        "form": "not",
+        "upos": "ADV",
+        "head": 22,
+        "deprel": "advmod"
+      },
+      {
+        "id": 21,
+        "form": "necessarily",
+        "upos": "ADV",
+        "head": 22,
+        "deprel": "advmod"
+      },
+      {
+        "id": 22,
+        "form": "reflect",
+        "upos": "VERB",
+        "head": 5,
+        "deprel": "conj"
+      },
+      {
+        "id": 23,
+        "form": "the",
+        "upos": "DET",
+        "head": 26,
+        "deprel": "det"
+      },
+      {
+        "id": 24,
+        "form": "BBC",
+        "upos": "PROPN",
+        "head": 26,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 25,
+        "form": "'s",
+        "upos": "PART",
+        "head": 24,
+        "deprel": "case"
+      },
+      {
+        "id": 26,
+        "form": "views",
+        "upos": "NOUN",
+        "head": 22,
+        "deprel": "obj"
+      },
+      {
+        "id": 27,
+        "form": "or",
+        "upos": "CCONJ",
+        "head": 28,
+        "deprel": "cc"
+      },
+      {
+        "id": 28,
+        "form": "opinions",
+        "upos": "NOUN",
+        "head": 26,
+        "deprel": "conj"
+      },
+      {
+        "id": 29,
+        "form": ".",
+        "upos": "PUNCT",
+        "head": 5,
+        "deprel": "punct"
+      }
+    ],
+    "critique_parse": [
+      {
+        "id": 1,
+        "form": "The",
+        "upos": "DET",
+        "head": 2,
+        "deprel": "det"
+      },
+      {
+        "id": 2,
+        "form": "BBC",
+        "upos": "PROPN",
+        "head": 3,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 3,
+        "form": "is",
+        "upos": "AUX",
+        "head": 0,
+        "deprel": "root"
+      },
+      {
+        "id": 4,
+        "form": "not",
+        "upos": "ADV",
+        "head": 3,
+        "deprel": "advmod"
+      },
+      {
+        "id": 5,
+        "form": "responsible",
+        "upos": "ADJ",
+        "head": 3,
+        "deprel": "acomp"
+      },
+      {
+        "id": 6,
+        "form": "for",
+        "upos": "ADP",
+        "head": 8,
+        "deprel": "case"
+      },
+      {
+        "id": 7,
+        "form": "the",
+        "upos": "DET",
+        "head": 8,
+        "deprel": "det"
+      },
+      {
+        "id": 8,
+        "form": "content",
+        "upos": "NOUN",
+        "head": 3,
+        "deprel": "obl"
+      },
+      {
+        "id": 9,
+        "form": "of",
+        "upos": "ADP",
+        "head": 11,
+        "deprel": "case"
+      },
+      {
+        "id": 10,
+        "form": "this",
+        "upos": "DET",
+        "head": 11,
+        "deprel": "det"
+      },
+      {
+        "id": 11,
+        "form": "e-mail",
+        "upos": "NOUN",
+        "head": 8,
+        "deprel": "nmod"
+      },
+      {
+        "id": 12,
+        "form": ",",
+        "upos": "PUNCT",
+        "head": 3,
+        "deprel": "punct"
+      },
+      {
+        "id": 13,
+        "form": "and",
+        "upos": "CCONJ",
+        "head": 22,
+        "deprel": "cc"
+      },
+      {
+        "id": 14,
+        "form": "anything",
+        "upos": "PRON",
+        "head": 22,
+        "deprel": "nsubj"
+      },
+      {
+        "id": 15,
+        "form": "written",
+        "upos": "VERB",
+        "head": 14,
+        "deprel": "acl:relcl"
+      },
+      {
+        "id": 16,
+        "form": "in",
+        "upos": "ADP",
+        "head": 18,
+        "deprel": "case"
+      },
+      {
+        "id": 17,
+        "form": "this",
+        "upos": "DET",
+        "head": 18,
+        "deprel": "det"
+      },
+      {
+        "id": 18,
+        "form": "e-mail",
+        "upos": "NOUN",
+        "head": 15,
+        "deprel": "obl"
+      },
+      {
+        "id": 19,
+        "form": "does",
+        "upos": "AUX",
+        "head": 22,
+        "deprel": "aux"
+      },
+      {
+        "id": 20,
+        "form": "not",
+        "upos": "ADV",
+        "head": 22,
+        "deprel": "advmod"
+      },
+      {
+        "id": 21,
+        "form": "necessarily",
+        "upos": "ADV",
+        "head": 22,
+        "deprel": "advmod"
+      },
+      {
+        "id": 22,
+        "form": "reflect",
+        "upos": "VERB",
+        "head": 3,
+        "deprel": "conj"
+      },
+      {
+        "id": 23,
+        "form": "the",
+        "upos": "DET",
+        "head": 26,
+        "deprel": "det"
+      },
+      {
+        "id": 24,
+        "form": "BBC",
+        "upos": "PROPN",
+        "head": 26,
+        "deprel": "nmod:poss"
+      },
+      {
+        "id": 25,
+        "form": "'s",
+        "upos": "PART",
+        "head": 24,
+        "deprel": "case"
+      },
+      {
+        "id": 26,
+        "form": "views",
+        "upos": "NOUN",
+        "head": 22,
+        "deprel": "obj"
+      },
+      {
+        "id": 27,
+        "form": "or",
+        "upos": "CCONJ",
+        "head": 28,
+        "deprel": "cc"
+      },
+      {
+        "id": 28,
+        "form": "opinions",
+        "upos": "NOUN",
+        "head": 26,
+        "deprel": "conj"
+      },
+      {
+        "id": 29,
+        "form": ".",
+        "upos": "PUNCT",
+        "head": 3,
+        "deprel": "punct"
+      }
+    ],
+    "token_differences": [
+      {
+        "id": 2,
+        "form": "BBC",
+        "gold": {
+          "head": 5,
+          "deprel": "nsubj"
+        },
+        "first": {
+          "head": 5,
+          "deprel": "nsubj"
+        },
+        "second": {
+          "head": 3,
+          "deprel": "nsubj"
+        }
+      },
+      {
+        "id": 3,
+        "form": "is",
+        "gold": {
+          "head": 5,
+          "deprel": "cop"
+        },
+        "first": {
+          "head": 5,
+          "deprel": "cop"
+        },
+        "second": {
+          "head": 0,
+          "deprel": "root"
+        }
+      },
+      {
+        "id": 4,
+        "form": "not",
+        "gold": {
+          "head": 5,
+          "deprel": "advmod"
+        },
+        "first": {
+          "head": 5,
+          "deprel": "advmod"
+        },
+        "second": {
+          "head": 3,
+          "deprel": "advmod"
+        }
+      },
+      {
+        "id": 5,
+        "form": "responsible",
+        "gold": {
+          "head": 0,
+          "deprel": "root"
+        },
+        "first": {
+          "head": 0,
+          "deprel": "root"
+        },
+        "second": {
+          "head": 3,
+          "deprel": "acomp"
+        }
+      },
+      {
+        "id": 8,
+        "form": "content",
+        "gold": {
+          "head": 5,
+          "deprel": "obl"
+        },
+        "first": {
+          "head": 5,
+          "deprel": "obl"
+        },
+        "second": {
+          "head": 3,
+          "deprel": "obl"
+        }
+      },
+      {
+        "id": 13,
+        "form": "and",
+        "gold": {
+          "head": 22,
+          "deprel": "cc"
+        },
+        "first": {
+          "head": 19,
+          "deprel": "cc"
+        },
+        "second": {
+          "head": 22,
+          "deprel": "cc"
+        }
+      },
+      {
+        "id": 15,
+        "form": "written",
+        "gold": {
+          "head": 14,
+          "deprel": "acl"
+        },
+        "first": {
+          "head": 14,
+          "deprel": "acl"
+        },
+        "second": {
+          "head": 14,
+          "deprel": "acl:relcl"
+        }
+      },
+      {
+        "id": 22,
+        "form": "reflect",
+        "gold": {
+          "head": 5,
+          "deprel": "conj"
+        },
+        "first": {
+          "head": 5,
+          "deprel": "conj"
+        },
+        "second": {
+          "head": 3,
+          "deprel": "conj"
+        }
+      },
+      {
+        "id": 23,
+        "form": "the",
+        "gold": {
+          "head": 24,
+          "deprel": "det"
+        },
+        "first": {
+          "head": 26,
+          "deprel": "det"
+        },
+        "second": {
+          "head": 26,
+          "deprel": "det"
+        }
+      }
+    ]
+  }
+}
