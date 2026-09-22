@@ -85,7 +85,7 @@ newer. The Make workflow requires Make and Bash. Run from the repository root:
 
 ```sh
 make setup       # Install the locked reproduction environment
-make verify      # Verify delivered archives, checksums, and results
+make verify      # Verify experimental inputs, archives, and results
 make reproduce   # Regenerate results, tables, figures, and prompt provenance
 make test        # Install the locked development group and run tests
 ```
@@ -106,15 +106,15 @@ All **24 compressed archives** and **24,921 response records** are included.
 Scripts read `.json.gz` files directly; no manual extraction is needed.
 Reproduction checks numerical reference hashes and reconstructs the archived
 prompt pairs. Generated figure bytes can vary with fonts and PDF metadata;
-after regeneration, check numerical agreement with:
+figures are not checksummed. After regeneration, verify with:
 
 ```sh
-uv run --locked --no-dev python scripts/verify.py --results-only
+make verify
 ```
 
 See [reproduction and maintenance](docs/reproduction.md) for direct uv commands,
 pip installation, dependency updates, and checksum maintenance. The current
-[validation record](docs/validation.md) reports 119 passing tests.
+[validation record](docs/validation.md) reports 122 passing tests.
 
 ## Project structure
 
@@ -139,7 +139,7 @@ pip installation, dependency updates, and checksum maintenance. The current
 ├── results/                  Full-precision scores, diagnostics, and tables
 ├── figures/                  Method schematic and relation/length figures
 ├── docs/                     Protocol, prompt provenance, and workflow guides
-└── checksums/                Input and complete-delivery SHA-256 manifests
+└── checksums/                Experimental-input SHA-256 manifest
 ```
 
 ### Code entry points
@@ -162,7 +162,9 @@ pip installation, dependency updates, and checksum maintenance. The current
 per-model diagnostics and their tests. Their conditional summaries can use
 different subsets; use `make reproduce` for the paper's reported results.
 `scripts/init_tracker.py` prepares new-run trackers, while
-`scripts/update_checksums.py` refreshes delivery manifests after reviewed changes.
+`scripts/update_checksums.py` refreshes input checksums only after intentional
+experimental-input changes. Code, README, and configuration edits do not require
+a checksum refresh.
 
 ## Optional new inference
 

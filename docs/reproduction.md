@@ -11,7 +11,7 @@ newer. Run from the repository root. Make targets require Make and Bash:
 | Command | Purpose |
 |---|---|
 | `make setup` | Sync the locked reproduction environment in `.venv/` |
-| `make verify` | Check delivered checksums, input identities, gold alignment, and results |
+| `make verify` | Check experimental-input checksums, input identities, gold alignment, and results |
 | `make reproduce` | Regenerate results, tables, diagnostic figures, and prompt provenance |
 | `make test` | Install the locked test group and run deterministic tests |
 
@@ -34,10 +34,9 @@ Qwen critique records and unscorable responses receive zero credit. See
 [protocol.md](protocol.md) for scoring and statistical details and
 [the prompt snapshot](prompt_source_snapshot.md) for actual input templates.
 
-Font availability can change regenerated figure bytes. After reproduction, use
-`uv run --locked --no-dev python scripts/verify.py --results-only` to check
-numerical agreement independently of delivery-file hashes. The fixed pipeline
-schematic is supplied rather than regenerated.
+Font availability can change regenerated figure bytes; figures are not checksummed.
+`make verify` still checks numerical agreement after reproduction without a
+checksum refresh. The fixed pipeline schematic is supplied rather than regenerated.
 
 ## Pip compatibility
 
@@ -72,20 +71,27 @@ Do not edit the generated requirements files or lockfile manually. Run
 The lockfile describes this reproduction release; it does not recreate missing
 historical inference environments or guarantee identical model API responses.
 
-## Updating release checksums
+## Checksum scope and maintenance
 
-After reviewing intentional changes and passing validation, run:
+`checksums/INPUT_SHA256SUMS.txt` covers the CoNLL-U datasets, archived responses
+and evaluations, prompt templates, and the saved archive-identity and numerical
+reference JSON files. Source code, documentation, configuration, and figures
+are not included. Routine edits to these files require no checksum refresh.
+Git records their changes; numerical reference hashes check reproduced results.
+
+Only after reviewing an intentional change to experimental inputs (including
+archive recompression), refresh the input manifest:
 
 ```sh
 uv run --locked --no-dev python scripts/update_checksums.py
 make verify
 ```
 
-This refreshes delivery manifests, not numerical reference hashes. Do not
-update `docs/expected_numeric_hashes.json` merely to silence a result mismatch.
-Compressed and uncompressed input identities must remain consistent. Inspect
-staged Git files before committing; do not include local runs, credentials,
-environments, or model caches.
+This command does not update archive identities or numerical reference hashes.
+Do not change `docs/input_identity.json` or `docs/expected_numeric_hashes.json`
+merely to silence a mismatch: investigate it against the intended input or
+scientific result first. Inspect staged files before committing; exclude local
+runs, credentials, environments, and model caches.
 
 The supervised Stanza reference is outside the archived two-model evaluation.
 Its original saved run output and exact historical resource package are not

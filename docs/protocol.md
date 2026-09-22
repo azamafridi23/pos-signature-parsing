@@ -16,7 +16,7 @@ Each `outputs/<model>/<condition>/model_responses.json.gz` decompresses to the e
 
 Each paired `model_evaluation.json.gz` contains extracted `llm_parse` values, gold annotations, and the archived scoring/validation fields. A null parse remains a failure; absence of a record is distinct from a null parse. The verifier checks both consistently.
 
-`docs/input_identity.json` records the uncompressed identity of all 24 input files. The package checksums separately cover their compressed bytes. Compression changes storage, not the response content.
+`docs/input_identity.json` records the uncompressed identity of all 24 input files. The input checksums separately cover their compressed bytes. Compression changes storage, not the response content.
 
 ## Prompt and historical limits
 
@@ -28,4 +28,4 @@ Provider-side checkpoint revisions and the exact historical Stanza resource pack
 
 The numerical reference hashes cover the original dataset statistics, scoring objects (excluding the storage-path description), paired tests, critique churn, and qualitative/relation/length outputs. Final-record token usage is recomputed from all supplied records with usage fields.
 
-Figure rendering uses Pillow and locally available fonts. Numeric results must match the reference hashes; figure pixels may vary across platforms. After regenerating figures on a different platform, use `python scripts/verify.py --results-only` to validate numerical agreement rather than expecting delivered PDF/PNG checksums to remain identical.
+Figure rendering uses Pillow and locally available fonts. Numeric results must match the reference hashes; figure pixels may vary across platforms. Figures are not checksummed; `make verify` validates numerical agreement after regeneration without refreshing the input manifest.

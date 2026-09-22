@@ -34,3 +34,13 @@ The lockfile did not change during validation. All 119 tests passed, and all
 archive, data, prompt, and numerical result files remained byte-identical.
 The requirements files are generated hash-bearing exports of the same lockfile.
 Optional inference dependencies were resolved but were not installed or run.
+
+## Experimental-input checksum scope
+
+On 22 September 2026, removed the whole-repository checksum manifest. The input
+manifest now covers 35 scientific input/reference files, excluding documentation.
+`make verify` and `make reproduce` passed offline with unchanged numerical
+references, and all 122 tests passed. Regression tests confirm that routine
+source/documentation/configuration/figure edits do not change the manifest,
+while altered or missing experimental inputs fail verification. Archives,
+datasets, prompts, and delivered numerical results remained byte-identical.

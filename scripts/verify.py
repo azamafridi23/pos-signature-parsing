@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify package integrity, final raw/evaluation agreement, and numeric outputs."""
+"""Verify experimental-input integrity, final raw/evaluation agreement, and numeric outputs."""
 import argparse
 import gzip
 import hashlib
@@ -38,6 +38,15 @@ def gold_reference():
     return records
 
 
+def verify_input_checksums():
+    manifest = ROOT / 'checksums' / 'INPUT_SHA256SUMS.txt'
+    for line in manifest.read_text().splitlines():
+        expected, relative = line.split('  ',1)
+        path = ROOT / relative
+        assert path.is_file() and not path.is_symlink(), relative
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==expected, relative
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
@@ -45,17 +54,12 @@ def main():
     mode.add_argument('--results-only', action='store_true')
     args=parser.parse_args()
     if not args.results_only:
-        manifest = ROOT / 'checksums' / ('INPUT_SHA256SUMS.txt' if args.inputs_only else 'SHA256SUMS.txt')
-        for line in manifest.read_text().splitlines():
-            expected, relative = line.split('  ',1)
-            path = ROOT / relative
-            assert path.is_file() and not path.is_symlink(), relative
-            assert hashlib.sha256(path.read_bytes()).hexdigest()==expected, relative
+        verify_input_checksums()
         identities=json.loads((ROOT/'docs/input_identity.json').read_text())
         for relative,identity in identities.items():
             data=gzip.decompress((ROOT/relative).read_bytes())
             assert hashlib.sha256(data).hexdigest()==identity['uncompressed_sha256'],relative
-        print('File checksums and all 24 archive identities verified.')
+        print('Experimental-input checksums and all 24 archive identities verified.')
     if args.inputs_only:
         return
     reference = gold_reference()
