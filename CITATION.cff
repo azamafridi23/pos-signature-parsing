@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this research artifact, please cite this work. Paper identifiers will be added when available."
 title: "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing"
 type: software
+license: MIT
+version: 0.1.0
 authors:
   - family-names: Afridi
     given-names: Muhammad Azam

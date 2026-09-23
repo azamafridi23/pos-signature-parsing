@@ -122,7 +122,7 @@ pip installation, dependency updates, and checksum maintenance. The current
 .
 ├── README.md                 Paper overview and getting started
 ├── CITATION.cff              Citation metadata
-├── LICENSE.md                Project licensing status
+├── LICENSE.md                MIT License for project-authored material
 ├── Makefile                  Setup, verification, reproduction, and tests
 ├── pyproject.toml            Dependency definitions and optional groups
 ├── uv.lock                   Resolved dependency versions and package hashes
@@ -188,7 +188,10 @@ The author list and paper title above match the current manuscript.
 [CITATION.cff](CITATION.cff) provides citation metadata; the public paper
 identifier will be added when available.
 
-A project-level reuse license has **not yet been selected**; see
-[LICENSE.md](LICENSE.md). The bundled English-EWT data retains its
-[upstream license](data/UD_English-EWT/LICENSE.txt) and
-[source notices](data/UD_English-EWT/README.md).
+Project-authored code, prompts, figures, results, and documentation are
+released under the [MIT License](LICENSE.md). The bundled English-EWT data in
+`data/` retains its upstream CC BY-SA 4.0
+[license](data/UD_English-EWT/LICENSE.txt) and
+[source notices](data/UD_English-EWT/README.md). The archived model responses
+in `outputs/` reproduce EWT text and model outputs, so they remain subject to
+those upstream terms and any applicable model-provider terms.

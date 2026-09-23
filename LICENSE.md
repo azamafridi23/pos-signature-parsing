@@ -1,11 +1,21 @@
-# Licensing status
+MIT License
 
-A project-level reuse license for the project-authored code, prompts, and
-figures has not yet been selected. This file does not grant a reuse license.
+Copyright (c) 2026 Muhammad Azam Afridi, Rajab Ali, and Marco Passarotti
 
-The bundled UD English-EWT data retains its upstream CC BY-SA 4.0 license and
-underlying-text notices. See `data/UD_English-EWT/LICENSE.txt` and the adjacent
-`README.md`. Including the data here does not replace those terms.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Model responses and reproduced corpus text retain any applicable third-party
-terms. A future project code license should identify its scope explicitly.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
