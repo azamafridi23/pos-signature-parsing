@@ -1,12 +1,16 @@
 cff-version: 1.2.0
-message: "If you use this research artifact, please cite this work. Paper identifiers will be added when available."
+message: "If you use this research artifact, please cite the archived release below. The paper identifier will be added when available."
 title: "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing"
 type: software
 license: MIT
 version: 0.1.0
+date-released: "2026-09-23"
+doi: "10.5281/zenodo.22924472"
+repository-code: "https://github.com/azamafridi23/pos-signature-parsing"
 authors:
   - family-names: Afridi
     given-names: Muhammad Azam
+    orcid: "https://orcid.org/0009-0009-6184-4032"
   - family-names: Ali
     given-names: Rajab
   - family-names: Passarotti

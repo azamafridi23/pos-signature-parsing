@@ -1,5 +1,7 @@
 # POS-Signature Demonstration Retrieval for In-Context Dependency Parsing
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22924472.svg)](https://doi.org/10.5281/zenodo.22924472)
+
 **Muhammad Azam Afridi · Rajab Ali · Marco Passarotti**
 
 Research implementation and reproducibility artifact accompanying the paper
@@ -185,8 +187,11 @@ The supplied Stanza reference runner is optional and is not run by Make targets.
 ## Citation and licensing
 
 The author list and paper title above match the current manuscript.
-[CITATION.cff](CITATION.cff) provides citation metadata; the public paper
-identifier will be added when available.
+Cite artifact version **0.1.0** using
+[doi:10.5281/zenodo.22924472](https://doi.org/10.5281/zenodo.22924472).
+[CITATION.cff](CITATION.cff) provides author and release metadata. This DOI
+identifies the research artifact; the public paper identifier will be added
+when available.
 
 Project-authored code, prompts, figures, results, and documentation are
 released under the [MIT License](LICENSE.md). The bundled English-EWT data in
