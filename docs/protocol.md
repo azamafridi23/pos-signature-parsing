@@ -6,9 +6,13 @@ All models and conditions are aligned to the same lexicographically ordered EWT 
 
 Schema extraction uses the first opening JSON brace and requires the remainder to decode, then normalizes the required token fields. This follows the established archive scorer. The verifier confirms agreement with every provided evaluation record and checks gold token IDs, forms, UPOS, heads, and relations against the bundled CoNLL-U test file.
 
-Paired inference uses 10,000 sentence resamples, `random.Random(42)`, identical resampled indices across systems, and token-weighted micro LAS on each sample. Intervals are pointwise percentile intervals. Two-sided tail probabilities use add-one smoothing. Four POS-versus-Semantic / POS-versus-Fixed contrasts form the primary Holm family. The other comparisons are exploratory; separate 15-comparison Holm values are also supplied. Read `first` and `second` to determine every contrast's direction.
+Paired inference uses 10,000 bootstrap samples with `random.Random(42)`. Each sample draws 2,077 sentences with replacement and uses identical sentence indices across systems. Token-weighted micro LAS is recomputed using the scored-token count in that sample as its denominator; the original corpus denominator of 21,998 does not remain fixed across resamples. Pointwise 95% confidence intervals use the 2.5th and 97.5th percentiles of the sampled LAS differences.
 
-Critique edit rates are conditional on available scorable parses at both stages. Corpus LAS and its contrasts continue to use the full test denominator. Relation and length diagnostics are descriptive.
+Approximate two-sided percentile-bootstrap p-values use add-one smoothing. For `R = 10,000` and sampled differences `delta = first - second`, the lower and upper tail estimates are `(1 + count(delta <= 0)) / (R + 1)` and `(1 + count(delta >= 0)) / (R + 1)`. The reported p-value is twice the smaller estimate, capped at one. Zero differences count in both tails; this is an approximate bootstrap estimate, not an exact test.
+
+Holm correction at alpha .05 is applied jointly to four focal contrasts: POS-Signature versus Semantic and versus Fixed for each model. These are labeled `primary` in the result files. Other comparisons are exploratory; separate 15-comparison Holm values are also supplied for each model. Read `first` and `second` to determine every contrast's direction. Confidence intervals are pointwise and are not adjusted for multiple comparisons.
+
+Critique edit rates are conditional on available scorable parses at both stages. Observed corpus LAS and observed corpus contrasts continue to use the full test denominator. Relation and length diagnostics are descriptive.
 
 ## Archived records
 
@@ -22,7 +26,9 @@ Each paired `model_evaluation.json.gz` contains extracted `llm_parse` values, go
 
 The fixed critique label inventory omits `det`; the CoT worked example overgeneralizes punctuation attachment. Both are preserved as used. Effective messages can differ from fixed templates, so archived messages are authoritative for each call. Their effects were not independently isolated.
 
-Provider-side checkpoint revisions and the exact historical Stanza resource package were not preserved. The development split was unused, and the record does not establish that design decisions preceded test-output inspection. This is an exploratory final-output evaluation.
+Prompts, retrieval weights, and fixed examples were finalized before evaluation; test outputs were inspected afterward to interpret the results. The development split was unused. Relation- and length-based diagnostics are post-hoc and should be interpreted as exploratory.
+
+Provider-side checkpoint revisions and the exact historical Stanza resource package were not preserved. Additional historical inference and retrieval metadata, including unavailable environment details, are documented in [inference.md](inference.md).
 
 ## Reproduction outputs
 

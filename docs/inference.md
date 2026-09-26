@@ -16,6 +16,34 @@ The model aliases used in the archived study are `openai/gpt-oss-120b` and
 add `--model Qwen/Qwen2.5-72B-Instruct --reasoning-effort omit` and use a
 separate output directory and tracker. Hosted availability can change.
 
+## Historical experiment settings
+
+The following describes the experiments reported in the paper. Commands below
+are for optional new runs; the current dependency lock and hosted endpoints do
+not guarantee reconstruction of the original inference environment.
+
+All conditions used temperature 0, top-p 1, seed 42, and a 6,000-token completion
+limit. First-pass conditions requested JSON-object responses except CoT, which
+requested text; Critique-Refine requested JSON-object responses. gpt-oss used
+reasoning effort `none`; Qwen omitted the reasoning-effort field. The paper
+reports DeepInfra's default serving precision as MXFP4 for gpt-oss and FP8 for
+Qwen. These are provider-described serving settings, not locally verified
+checkpoint identities. Provider-side checkpoint revisions were not exposed.
+The collectors allowed three total API attempts per call, waiting one second
+and then two seconds before retries after exceptions.
+
+Both retrievers rank cosine scores with reversed NumPy `argsort` over candidate
+arrays in training-data order; no stable tie-breaking rule is specified.
+Semantic embeddings are L2-normalized and stored as `float32`. The paper
+identifies `all-mpnet-base-v2` revision
+`e8c3b32edf5434bc2275fc9bab85f82640a19130`; the supplied loader uses the model
+name without explicitly pinning this revision. A new download therefore should
+not be assumed to reproduce the historical encoder solely from these commands.
+The historical Sentence-Transformers version and device, exact downloaded
+Stanza resource package, and full retrieval environment were not preserved.
+The preserved outputs are the target for exact numerical reproduction; new
+model calls may produce different responses.
+
 ## First-pass conditions
 
 Initialize a tracker once for each new model run. The setup command refuses to
