@@ -25,17 +25,17 @@ not guarantee reconstruction of the original inference environment.
 All conditions used temperature 0, top-p 1, seed 42, and a 6,000-token completion
 limit. First-pass conditions requested JSON-object responses except CoT, which
 requested text; Critique-Refine requested JSON-object responses. gpt-oss used
-reasoning effort `none`; Qwen omitted the reasoning-effort field. The paper
-reports DeepInfra's default serving precision as MXFP4 for gpt-oss and FP8 for
-Qwen. These are provider-described serving settings, not locally verified
+reasoning effort `none`; Qwen omitted the reasoning-effort field. Earlier
+manuscript versions recorded DeepInfra's documented default serving precision
+as MXFP4 for gpt-oss and FP8 for Qwen. These are provider-described serving settings, not locally verified
 checkpoint identities. Provider-side checkpoint revisions were not exposed.
 The collectors allowed three total API attempts per call, waiting one second
 and then two seconds before retries after exceptions.
 
 Both retrievers rank cosine scores with reversed NumPy `argsort` over candidate
 arrays in training-data order; no stable tie-breaking rule is specified.
-Semantic embeddings are L2-normalized and stored as `float32`. The paper
-identifies `all-mpnet-base-v2` revision
+Semantic embeddings are L2-normalized and stored as `float32`. Earlier
+manuscript versions recorded `all-mpnet-base-v2` revision
 `e8c3b32edf5434bc2275fc9bab85f82640a19130`; the supplied loader uses the model
 name without explicitly pinning this revision. A new download therefore should
 not be assumed to reproduce the historical encoder solely from these commands.
