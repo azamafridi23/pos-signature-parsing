@@ -19,8 +19,10 @@ NumPy 2.3.5 and Pillow 12.3.0.
 
 No new API calls, model inference, or Stanza baseline run was performed.
 Font availability can change regenerated figure bytes; numerical reference
-hashes determine result agreement. This validates the supplied LLM artifact,
-not the missing historical Stanza run record or future hosted-model behavior.
+hashes determine result agreement. These checks validate the supplied LLM artifact; they did not rerun the
+supervised Stanza reference or validate future hosted-model behavior. The
+subsequently recovered Stanza resources are documented in
+[stanza_resources.md](stanza_resources.md).
 
 ## Locked environment workflow
 

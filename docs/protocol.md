@@ -28,7 +28,7 @@ The fixed critique label inventory omits `det`; the CoT worked example overgener
 
 Prompts, retrieval weights, and fixed examples were finalized before evaluation; test outputs were inspected afterward to interpret the results. The development split was unused. Relation- and length-based diagnostics are post-hoc and should be interpreted as exploratory.
 
-Provider-side checkpoint revisions and the exact historical Stanza resource package were not preserved. Additional historical inference and retrieval metadata, including unavailable environment details, are documented in [inference.md](inference.md).
+The experiments used the hosted model endpoints documented in [inference.md](inference.md); exact provider-side checkpoint revisions were not exposed. The supervised reference records Stanza 1.11.1, and the recovered local resources identify English resources version 1.11.0 and the package components documented in [stanza_resources.md](stanza_resources.md). Recovered environment versions and retrieval configuration are documented in [inference.md](inference.md).
 
 ## Reproduction outputs
 

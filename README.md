@@ -180,8 +180,11 @@ uv sync --locked --no-dev --extra inference
 
 Follow [the inference guide](docs/inference.md) for tracker initialization,
 condition-specific commands, and evaluation. New-run defaults use Git-ignored
-`runs/` paths. Historical provider revisions and exact Stanza resources were
-not preserved, so new inference need not reproduce the archived responses.
+`runs/` paths. The experiments used DeepInfra’s `openai/gpt-oss-120b` and
+`Qwen/Qwen2.5-72B-Instruct` endpoints. Exact provider-side checkpoint revisions
+were not exposed, and new inference may produce different responses. Stanza
+versions and package identifiers are documented in
+[the Stanza resource guide](docs/stanza_resources.md).
 The supplied Stanza reference runner is optional and is not run by Make targets.
 
 ## Citation and licensing

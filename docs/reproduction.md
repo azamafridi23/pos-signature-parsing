@@ -68,8 +68,9 @@ uv export --locked --no-dev --extra inference --no-emit-project -o requirements-
 
 Do not edit the generated requirements files or lockfile manually. Run
 `make setup`, `make reproduce`, and `make test` after a dependency change.
-The lockfile describes this reproduction release; it does not recreate missing
-historical inference environments or guarantee identical model API responses.
+The lockfile describes this reproduction release. The recovered historical
+inference environment is documented separately in [inference.md](inference.md);
+the current lockfile does not guarantee identical model API responses.
 
 ## Checksum scope and maintenance
 

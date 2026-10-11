@@ -39,8 +39,15 @@ manuscript versions recorded `all-mpnet-base-v2` revision
 `e8c3b32edf5434bc2275fc9bab85f82640a19130`; the supplied loader uses the model
 name without explicitly pinning this revision. A new download therefore should
 not be assumed to reproduce the historical encoder solely from these commands.
-The historical Sentence-Transformers version and device, exact downloaded
-Stanza resource package, and full retrieval environment were not preserved.
+The retained experiment environment records Python 3.11.14,
+Sentence-Transformers 5.5.1, Transformers 5.11.0, PyTorch 2.10.0, NumPy 2.4.2,
+OpenAI SDK 2.24.0, and Stanza 1.11.1. Installed package metadata agrees with
+the saved requirements. These retained files are environment evidence, rather
+than a separate environment log for every run. The local `all-mpnet-base-v2`
+cache resolves to revision `e8c3b32edf5434bc2275fc9bab85f82640a19130`.
+The semantic loader used automatic device selection. The supervised Stanza
+reference used CPU execution and English resources version 1.11.0; package
+details are documented in the [Stanza resource guide](stanza_resources.md).
 The preserved outputs are the target for exact numerical reproduction; new
 model calls may produce different responses.
 
@@ -76,8 +83,9 @@ Use the following condition settings and a corresponding new output path:
 
 Both retrieval methods require the training split. POS retrieval uses Stanza;
 semantic retrieval uses `all-mpnet-base-v2`. These libraries can download model
-resources and create caches in `data/processed/`. Current model downloads do
-not recover missing historical environment metadata.
+resources and create caches in `data/processed/`. The recovered
+environment versions above describe the retained experiment setup; new model
+downloads may resolve different resources.
 
 ## Evaluation and Critique-Refine
 
